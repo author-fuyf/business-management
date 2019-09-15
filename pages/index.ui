@@ -1,0 +1,60 @@
+<template>
+  <ui-page>
+      <ui-view class="sliderContent" ui:if="{{isShow}}">
+        <ui-slider width="260"></ui-slider>      
+      </ui-view>
+      <ui-view class="buttonContent">
+        <ui-button type="primary" bindtap="sliderShow" class="slider">创建滑动条控件</ui-button>
+        <ui-button type="primary" bindtap="navHandle">{{ buttonText }}</ui-button>
+      </ui-view>
+  </ui-page>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '搜索合作',
+    backgroundColor: '#F4F4F4',
+    navigationBarTextStyle: 'white'
+  },
+  data () {
+    return {
+      buttonText: '界面跳转',
+      isShow:false
+    }
+  },
+  methods: {
+    sliderShow() {
+      this.isShow=true
+    },
+    navHandle () {
+      ui.navigateTo({
+        url: '/pages/detail'
+      })
+    }
+  },
+  mounted() {
+    //首屏页面需要在mounted中延时才能调用框架api，其他页面不需要延时
+    setTimeout(() => {
+      //关闭app启动图
+      ui.closeSplashscreen()
+    }, 1000);
+  }
+}
+
+</script>
+
+<style lang="less">
+.content{
+  .mix-flex-center();
+}
+.sliderContent{
+  padding:50px 50px 0px 50px;
+}
+.buttonContent{
+  padding:50px;
+  .slider {
+    padding-left: 20px;
+  }
+}
+</style>
