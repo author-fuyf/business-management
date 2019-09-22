@@ -2,7 +2,7 @@
 export default {
   config: {
     "pages": [
-      "pages/index",
+      "pages/search-cooperation/index",
       "pages/detail"
     ],
     "theme": {
@@ -21,7 +21,7 @@ export default {
       "backgroundColor": "#fff",
       "list": [
         {
-          "pagePath": "pages/index",
+          "pagePath": "pages/search-cooperation/index",
           "iconName": "search-cooperation",
           "text": "找合作"
         },
