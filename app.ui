@@ -22,17 +22,17 @@ export default {
       "list": [
         {
           "pagePath": "pages/index",
-          "iconName": "home",
+          "iconName": "search-cooperation",
           "text": "找合作"
         },
         {
           "pagePath": "pages/release",
-          "iconName": "arrow-left",
+          "iconName": "release",
           "text": "发布"
         },
         {
           "pagePath": "pages/user",
-          "iconName": "user",
+          "iconName": "me",
           "text": "我的"
         },
       ]

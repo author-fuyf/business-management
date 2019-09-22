@@ -12,14 +12,19 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-arrow-left:before {
-    content: "\e605";
+  content: "\e75b";
 }
 
-.icon-user:before {
-    content: "\e622";
+.icon-search-cooperation:before {
+  content: "\e62f";
 }
 
-.icon-home:before {
-    content: "\e62b";
+.icon-me:before {
+  content: "\e630";
+}
+
+.icon-release:before {
+  content: "\e631";
 }
