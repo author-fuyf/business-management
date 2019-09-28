@@ -1,0 +1,93 @@
+<!--cooperationDetail-->
+<template>
+  <ui-page class="cooperation-detail">
+    <ui-view class="demo">
+      <ui-ex-swiper pagination autoplay="{{ autoplay }}">
+        <ui-ex-swiper-item class="bc_green">1</ui-ex-swiper-item>
+        <ui-ex-swiper-item class="bc_red">2</ui-ex-swiper-item>
+        <ui-ex-swiper-item class="bc_blue">3</ui-ex-swiper-item>
+      </ui-ex-swiper>
+    </ui-view>
+    <ui-row class="form-item">
+      <ui-col span="4" class="item-left">公司：</ui-col>
+      <ui-col class="color-7f">上海溪枫信息科技有限公司</ui-col>
+    </ui-row>
+    <ui-row class="form-item">
+      <ui-col span="4" class="item-left">地址：</ui-col>
+      <ui-col class="color-7f">上海市金山区海芙路199弄18号905室
+      </ui-col>
+    </ui-row>
+    <ui-row class="form-item">
+      <ui-col span="4" class="item-left">所属行业：</ui-col>
+      <ui-col class="color-7f">互联网、软件</ui-col>
+    </ui-row>
+    <ui-row class="form-item">
+      <ui-col span="4" class="item-left">联系人：</ui-col>
+      <ui-col class="color-7f">李国涛</ui-col>
+    </ui-row>
+    <ui-row class="form-item">
+      <ui-col span="4" class="item-left">联系电话：</ui-col>
+      <ui-col class="color-7f">18301735240</ui-col>
+    </ui-row>
+    <ui-row class="form-item">
+      <ui-col span="4" class="item-left">邮箱：</ui-col>
+      <ui-col class="color-7f">771085570@qq.com</ui-col>
+    </ui-row>
+  </ui-page>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '企业信息'
+  },
+  data() {
+    return {
+      autoplay: {
+        delay: 1000
+      }
+    }
+  },
+  methods: {},
+  mounted() {}
+}
+</script>
+
+<style lang="less">
+.cooperation-detail {
+  .color-7f {
+    color: #7F7F7F;
+  }
+  .demo {
+    margin-bottom: 10px;
+    .container {
+      padding: 5px 10px;
+    }
+    .swiper-slide {
+      height: 200px;
+      line-height: 100px;
+      text-align: center;
+      color: #fff;
+    }
+    .bc_green {
+      background-color: #7cc422;
+    }
+    .bc_red {
+      background-color: #ffa060;
+    }
+    .bc_blue {
+      background-color: #46d1e4;
+    }
+  }
+  .ui-page-content {
+    padding: 10px 2.5% 0 2.5%;
+    .form-item {
+      margin-bottom: 5px;
+      .item-left {
+        // text-align: right;
+        padding-left: 5%;
+      }
+    }
+  }
+}
+</style>

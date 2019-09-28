@@ -2,6 +2,7 @@
   <ui-page>
     <ui-view class="content" style="{{{ height:contentHeight+'px' }}}">
       Hello UILeader!
+      <span bindtap="goDetail">goDetail</span>
     </ui-view>
   </ui-page>
 </template>
@@ -17,6 +18,11 @@ export default {
     }
   },
   methods: {
+    goDetail() {
+      ui.redirectTo({
+        url: '/pages/cooperation/cooperationDetail'
+      })
+    },
     buttonHandle () {
 
     }
