@@ -43,6 +43,50 @@
   }
 }
 
+/* 1px解决方案 */
+.mix-dashed-1px (@top, @right, @bottom, @left, @color) {
+  position: relative;
+
+  @scale: 2;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% * @scale;
+    height: 100% * @scale;
+    border: 0 @color dashed;
+    box-sizing: border-box;
+    transform-origin: 0 0;
+    transform: scale(1 / @scale);
+    pointer-events: none;
+    z-index: 0;
+
+    & when (@top > 0) {
+      border-top-width: 1px;
+    }
+
+    & when (@right > 0) {
+      border-right-width: 1px;
+    }
+
+    & when (@bottom > 0) {
+      border-bottom-width: 1px;
+    }
+
+    & when (@left > 0) {
+      border-left-width: 1px;
+    }
+  }
+}
+
+/* 清除1px */
+.mix-dashed-1px-clear () {
+  &:before {
+    display: none;
+  }
+}
 
 /*
  * 清除浮动

@@ -28,3 +28,7 @@
 .icon-release:before {
   content: "\e631";
 }
+
+.icon-phone:before {
+  content: "\e60e";
+}

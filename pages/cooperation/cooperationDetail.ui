@@ -1,38 +1,43 @@
 <!--cooperationDetail-->
 <template>
   <ui-page class="cooperation-detail">
-    <ui-view class="demo">
+    <ui-view class="demo imgHeight">
       <ui-ex-swiper pagination autoplay="{{ autoplay }}">
         <ui-ex-swiper-item class="bc_green">1</ui-ex-swiper-item>
         <ui-ex-swiper-item class="bc_red">2</ui-ex-swiper-item>
         <ui-ex-swiper-item class="bc_blue">3</ui-ex-swiper-item>
       </ui-ex-swiper>
     </ui-view>
-    <ui-row class="form-item">
-      <ui-col span="4" class="item-left">公司：</ui-col>
-      <ui-col class="color-7f">上海溪枫信息科技有限公司</ui-col>
-    </ui-row>
-    <ui-row class="form-item">
-      <ui-col span="4" class="item-left">地址：</ui-col>
-      <ui-col class="color-7f">上海市金山区海芙路199弄18号905室
-      </ui-col>
-    </ui-row>
-    <ui-row class="form-item">
-      <ui-col span="4" class="item-left">所属行业：</ui-col>
-      <ui-col class="color-7f">互联网、软件</ui-col>
-    </ui-row>
-    <ui-row class="form-item">
-      <ui-col span="4" class="item-left">联系人：</ui-col>
-      <ui-col class="color-7f">李国涛</ui-col>
-    </ui-row>
-    <ui-row class="form-item">
-      <ui-col span="4" class="item-left">联系电话：</ui-col>
-      <ui-col class="color-7f">18301735240</ui-col>
-    </ui-row>
-    <ui-row class="form-item">
-      <ui-col span="4" class="item-left">邮箱：</ui-col>
-      <ui-col class="color-7f">771085570@qq.com</ui-col>
-    </ui-row>
+    <ui-scroll-view scroll-y height="{{height - imgHeight - 20}}">
+      <ui-row class="form-item">
+        <ui-col span="4" class="item-left">公司：</ui-col>
+        <ui-col class="color-7f">上海溪枫信息科技有限公司</ui-col>
+      </ui-row>
+      <ui-row class="form-item">
+        <ui-col span="4" class="item-left">地址：</ui-col>
+        <ui-col class="color-7f">上海市金山区海芙路199弄18号905室</ui-col>
+      </ui-row>
+      <ui-row class="form-item">
+        <ui-col span="4" class="item-left">所属行业：</ui-col>
+        <ui-col class="color-7f">互联网、软件</ui-col>
+      </ui-row>
+      <ui-row class="form-item">
+        <ui-col span="4" class="item-left">联系人：</ui-col>
+        <ui-col class="color-7f">李国涛</ui-col>
+      </ui-row>
+      <ui-row class="form-item contact-number">
+        <ui-col span="4" class="item-left">联系电话：</ui-col>
+        <ui-col class="color-7f">18301735240</ui-col>
+        <ui-icon type="phone" size="25" color="#666666" class="icon-phone"></ui-icon>
+      </ui-row>
+      <ui-row class="form-item">
+        <ui-col span="4" class="item-left">邮箱：</ui-col>
+        <ui-col class="color-7f">771085570@qq.com</ui-col>
+      </ui-row>
+      <ui-view class="border-bottom-dashed-1px">
+
+      </ui-view>
+    </ui-scroll-view>
   </ui-page>
 </template>
 
@@ -45,7 +50,9 @@ export default {
     return {
       autoplay: {
         delay: 1000
-      }
+      },
+      height: ui.DEFAULT_CONTENT_HEIGHT,
+      imgHeight: parseInt(ui.WIN_WIDTH / 1125 * 628)
     }
   },
   methods: {},
@@ -56,7 +63,10 @@ export default {
 <style lang="less">
 .cooperation-detail {
   .color-7f {
-    color: #7F7F7F;
+    color: #7f7f7f;
+  }
+  .border-bottom-dashed-1px {
+    .mix-dashed-1px(0, 0, 1, 0, #666);
   }
   .demo {
     margin-bottom: 10px;
@@ -86,6 +96,14 @@ export default {
       .item-left {
         // text-align: right;
         padding-left: 5%;
+      }
+    }
+    .contact-number {
+      position: relative;
+      .icon-phone {
+        position: absolute;
+        right: 0;
+        top: -10px;
       }
     }
   }
