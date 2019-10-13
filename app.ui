@@ -4,7 +4,8 @@ export default {
     pages: [
       'pages/search-cooperation/index',
       'pages/detail',
-      'pages/cooperation/cooperationDetail'
+      'pages/cooperation/cooperationDetail',
+      'pages/production-infomation/productionInfomation'
     ],
     theme: {
       'theme-color': '#3399ff'

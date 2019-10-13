@@ -1,0 +1,106 @@
+<!--productionInfomation-->
+<template>
+  <ui-page class="production-infomation">
+    <ui-view class="demo imgHeight">
+      <ui-ex-swiper pagination autoplay="{{ autoplay }}">
+        <ui-ex-swiper-item class="bc_green">1</ui-ex-swiper-item>
+        <ui-ex-swiper-item class="bc_red">2</ui-ex-swiper-item>
+        <ui-ex-swiper-item class="bc_blue">3</ui-ex-swiper-item>
+      </ui-ex-swiper>
+    </ui-view>
+    <ui-scroll-view scroll-y height="{{height - imgHeight - 30}}">
+      <ui-row class="form-item">
+        <ui-col span="4" class="item-left">产品名称：</ui-col>
+        <ui-col class="color-7f">进销库存管理系统</ui-col>
+      </ui-row>
+      <ui-row class="form-item">
+        <ui-col span="4" class="item-left">联系人：</ui-col>
+        <ui-col class="color-7f">李国涛</ui-col>
+      </ui-row>
+      <ui-row class="form-item contact-number">
+        <ui-col span="4" class="item-left">联系电话：</ui-col>
+        <ui-col class="color-7f">18301735240</ui-col>
+        <ui-icon type="phone" size="25" color="#666666" class="icon-phone"></ui-icon>
+      </ui-row>
+      <ui-row class="form-item">
+        <ui-col span="4" class="item-left">产品介绍：</ui-col>
+        <ui-col class="color-7f"></ui-col>
+      </ui-row>
+      <ui-row class="form-item">
+        <ui-text selectable class="item-left color-7f">
+          万达集团创立于1988年，经过30年发展，已成为以现代服务业为主的大型跨国企业集团。万达是世界领先的不动产企业、世界领先的影视企业、世界领先的体育企业、世界领先的儿童产业企业。万达广场、万达影城、万达酒店、万达文化旅游城、万达宝贝王成为中国知名品牌。2018年企业资产6257亿元，收入2143亿元。
+        </ui-text>
+      </ui-row>
+    </ui-scroll-view>
+  </ui-page>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '产品信息'
+  },
+  data() {
+    return {
+      autoplay: {
+        delay: 1000
+      },
+      height: ui.DEFAULT_CONTENT_HEIGHT,
+      imgHeight: parseInt((ui.WIN_WIDTH / 1125) * 628)
+    }
+  },
+  methods: {},
+  mounted() {}
+}
+</script>
+
+<style lang="less">
+.production-infomation {
+  .color-7f {
+    color: #7f7f7f;
+  }
+  .demo {
+    margin-bottom: 10px;
+    .container {
+      padding: 5px 10px;
+    }
+    .swiper-slide {
+      height: 200px;
+      line-height: 100px;
+      text-align: center;
+      color: #fff;
+    }
+    .bc_green {
+      background-color: #7cc422;
+    }
+    .bc_red {
+      background-color: #ffa060;
+    }
+    .bc_blue {
+      background-color: #46d1e4;
+    }
+  }
+  .ui-page-content {
+    padding: 10px 2.5% 0 2.5%;
+    .form-item {
+      margin-bottom: 5px;
+      .item-left {
+        // text-align: right;
+        padding-left: 5%;
+      }
+    }
+    .contact-number {
+      position: relative;
+      .icon-phone {
+        position: absolute;
+        right: 0;
+        top: -10px;
+      }
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+</style>

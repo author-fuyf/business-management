@@ -46,7 +46,7 @@
       <ui-view class="border-bottom-dashed-1px"></ui-view>
       <ui-row-list>
         <ui-view class="title">产品列表：</ui-view>
-        <ui-row height="50" style="width: 90%;marginLeft: 10%;">
+        <ui-row height="50" style="width: 90%;marginLeft: 10%;" bindtap="goProductionDetail">
           <ui-col class="text" style="lineHeight: 50px">进销存管理系统</ui-col>
           <ui-col width="40" vertical-align="middle">
             <ui-icon type="arrow-right"></ui-icon>
@@ -86,7 +86,13 @@ export default {
       imgHeight: parseInt((ui.WIN_WIDTH / 1125) * 628)
     }
   },
-  methods: {},
+  methods: {
+    goProductionDetail() {
+      ui.navigateTo({
+        url: '/pages/production-infomation/productionInfomation'
+      })
+    }
+  },
   mounted() {}
 }
 </script>
