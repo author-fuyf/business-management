@@ -1,6 +1,26 @@
 <!--cooperationDetail-->
 <template>
   <ui-page class="cooperation-detail">
+    <ui-nav-bar
+      slot="nav-bar"
+      custom-style="{{ {'background-color':'#00B050'} }}"
+    >
+      <ui-row height="46" style="color: white">
+        <ui-col vertical-align="middle" align="center" width="70" bindtap="handleBack">
+          <ui-view class="nav_left">
+            <ui-icon type="arrow-left" size="16" color="white"></ui-icon>返回
+          </ui-view>
+        </ui-col>
+        <ui-col vertical-align="middle" align="center">
+          <ui-view class="nav_title">企业信息</ui-view>
+        </ui-col>
+        <ui-col vertical-align="middle" align="left" width="35" bindtap="iscollect = !iscollect">
+          <ui-icon ui:if="!iscollect" type="collection" size="22"></ui-icon>
+          <ui-icon ui:if="iscollect" type="collection-select" size="22" style="color: #f4ea2a"></ui-icon>
+          <!-- <ui-icon type="arrow-right" size="22"></ui-icon> -->
+        </ui-col>
+      </ui-row>
+    </ui-nav-bar>
     <ui-view class="demo imgHeight">
       <ui-ex-swiper pagination autoplay="{{ autoplay }}">
         <ui-ex-swiper-item class="bc_green">1</ui-ex-swiper-item>
@@ -75,7 +95,8 @@
 <script>
 export default {
   config: {
-    navigationBarTitleText: '企业信息'
+    navigationBarTitleText: '企业信息',
+    navigationStyle: 'custom'
   },
   data() {
     return {
@@ -83,14 +104,19 @@ export default {
         delay: 1000
       },
       height: ui.DEFAULT_CONTENT_HEIGHT,
-      imgHeight: parseInt((ui.WIN_WIDTH / 1125) * 628)
+      imgHeight: parseInt((ui.WIN_WIDTH / 1125) * 628),
+      iscollect: false
     }
   },
   methods: {
     goProductionDetail() {
       ui.navigateTo({
-        url: '/pages/production-infomation/productionInfomation'
+        url: '/pages/production-information/productionInformation'
       })
+    },
+    // 回退处理
+    handleBack() {
+      ui.navigateBack()
     }
   },
   mounted() {}

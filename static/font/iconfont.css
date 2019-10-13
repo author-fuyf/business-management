@@ -36,3 +36,11 @@
 .icon-phone:before {
   content: "\e60e";
 }
+
+.icon-collection:before {
+  content: "\e621";
+}
+
+.icon-collection-select:before {
+  content: "\e632";
+}

@@ -1,6 +1,6 @@
-<!--productionInfomation-->
+<!--productionInformation-->
 <template>
-  <ui-page class="production-infomation">
+  <ui-page class="production-information">
     <ui-view class="demo imgHeight">
       <ui-ex-swiper pagination autoplay="{{ autoplay }}">
         <ui-ex-swiper-item class="bc_green">1</ui-ex-swiper-item>
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="less">
-.production-infomation {
+.production-information {
   .color-7f {
     color: #7f7f7f;
   }

@@ -3,9 +3,8 @@ export default {
   config: {
     pages: [
       'pages/search-cooperation/index',
-      'pages/detail',
-      'pages/cooperation/cooperationDetail',
-      'pages/production-infomation/productionInfomation'
+      'pages/corporate-information/corporateInformation',
+      'pages/production-information/productionInformation'
     ],
     theme: {
       'theme-color': '#3399ff'
@@ -28,12 +27,12 @@ export default {
           text: '找合作'
         },
         {
-          pagePath: 'pages/release',
+          pagePath: 'pages/release/release',
           iconName: 'release',
           text: '发布'
         },
         {
-          pagePath: 'pages/user',
+          pagePath: 'pages/me/me',
           iconName: 'me',
           text: '我的'
         }

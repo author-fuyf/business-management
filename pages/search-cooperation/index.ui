@@ -92,9 +92,7 @@
 <script>
 export default {
   config: {
-    navigationBarTitleText: '搜索合作',
-    backgroundColor: '#F4F4F4',
-    navigationBarTextStyle: 'white'
+    navigationBarTitleText: '搜索合作'
   },
   data() {
     return {
@@ -114,7 +112,7 @@ export default {
   methods: {
     goDetail() {
       ui.navigateTo({
-        url: '/pages/cooperation/cooperationDetail'
+        url: '/pages/corporate-information/corporateInformation'
       })
     },
     handleInput() {
