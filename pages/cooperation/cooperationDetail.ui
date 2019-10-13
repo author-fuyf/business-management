@@ -8,7 +8,7 @@
         <ui-ex-swiper-item class="bc_blue">3</ui-ex-swiper-item>
       </ui-ex-swiper>
     </ui-view>
-    <ui-scroll-view scroll-y height="{{height - imgHeight - 20}}">
+    <ui-scroll-view scroll-y height="{{height - imgHeight - 30}}">
       <ui-row class="form-item">
         <ui-col span="4" class="item-left">公司：</ui-col>
         <ui-col class="color-7f">上海溪枫信息科技有限公司</ui-col>
@@ -34,10 +34,41 @@
         <ui-col span="4" class="item-left">邮箱：</ui-col>
         <ui-col class="color-7f">771085570@qq.com</ui-col>
       </ui-row>
-      <ui-view class="border-bottom-dashed-1px">
-
+      <ui-view class="border-bottom-dashed-1px"></ui-view>
+      <ui-view class="sample_content">
+        <ui-view class="title" align="center">公司介绍</ui-view>
+        <ui-summary height="65">
+          <ui-text
+            class="color-7f"
+          >一对好基友孟云（韩庚 饰）和余飞（郑恺 饰）跟女友都因为一点小事宣告分手，并且“拒绝挽回，死不认错”。两人在夜店、派对与交友软件上放飞人生第二春，大肆庆祝“黄金单身期”，从而引发了一系列好笑的故事。孟云与女友同甘共苦却难逃“五年之痒”，余飞与女友则棋逢敌手相爱相杀无绝期。然而现实的“打脸”却来得猝不及防：一对推拉纠结零往来，一对纠缠互怼全交代。两对恋人都将面对最终的选择：是再次相见？还是再也不见？</ui-text>
+        </ui-summary>
       </ui-view>
+      <ui-view class="border-bottom-dashed-1px"></ui-view>
+      <ui-row-list>
+        <ui-view class="title">产品列表：</ui-view>
+        <ui-row height="50" style="width: 90%;marginLeft: 10%;">
+          <ui-col class="text" style="lineHeight: 50px">进销存管理系统</ui-col>
+          <ui-col width="40" vertical-align="middle">
+            <ui-icon type="arrow-right"></ui-icon>
+          </ui-col>
+        </ui-row>
+        <ui-row height="50" style="width: 90%;marginLeft: 10%;">
+          <ui-col class="text" style="lineHeight: 50px">GRM客户关系管理系统</ui-col>
+          <ui-col width="40" vertical-align="middle">
+            <ui-icon type="arrow-right"></ui-icon>
+          </ui-col>
+        </ui-row>
+        <ui-row height="50" style="width: 90%;marginLeft: 10%;">
+          <ui-col class="text" style="lineHeight: 50px">企业信息管理系统</ui-col>
+          <ui-col width="40" vertical-align="middle">
+            <ui-icon type="arrow-right"></ui-icon>
+          </ui-col>
+        </ui-row>
+      </ui-row-list>
     </ui-scroll-view>
+    <ui-fixed-view bottom="0" left="0" right="0">
+      <ui-view class="views" align="center">浏览次数：620次</ui-view>
+    </ui-fixed-view>
   </ui-page>
 </template>
 
@@ -52,7 +83,7 @@ export default {
         delay: 1000
       },
       height: ui.DEFAULT_CONTENT_HEIGHT,
-      imgHeight: parseInt(ui.WIN_WIDTH / 1125 * 628)
+      imgHeight: parseInt((ui.WIN_WIDTH / 1125) * 628)
     }
   },
   methods: {},
@@ -106,6 +137,13 @@ export default {
         top: -10px;
       }
     }
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
+}
+.views {
+  color: #7f7f7f;
 }
 </style>

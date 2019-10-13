@@ -17,6 +17,10 @@
   content: "\e75b";
 }
 
+.icon-arrow-right:before {
+  content: "\e75c";
+}
+
 .icon-search-cooperation:before {
   content: "\e62f";
 }
