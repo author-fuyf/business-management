@@ -20,24 +20,24 @@
     </ui-row>
     <ui-row class="mb-20">
       <ui-col width="100" align="left" vertical-align="middle" class="pl-20">省份：</ui-col>
-      <ui-col class="border-1px">请选择省份</ui-col>
+      <ui-col class="border-1px padding-5">请选择省份</ui-col>
     </ui-row>
     <ui-row class="mb-20">
       <ui-col width="100" align="left" vertical-align="middle" class="pl-20">城市：</ui-col>
-      <ui-col class="border-1px">请选择城市</ui-col>
+      <ui-col class="border-1px padding-5">请选择城市</ui-col>
     </ui-row>
     <ui-row class="mb-20">
       <ui-col width="100" align="left" vertical-align="middle" class="pl-20">区县：</ui-col>
-      <ui-col class="border-1px">请选择区县</ui-col>
+      <ui-col class="border-1px padding-5">请选择区县</ui-col>
     </ui-row>
     <ui-row class="border-bottom-dashed-1px mb-10"></ui-row>
     <ui-row class="mb-20">
       <ui-col width="100" align="left" vertical-align="middle" class="pl-20">姓名：</ui-col>
-      <ui-col class="border-1px">请选择姓名</ui-col>
+      <ui-col class="border-1px padding-5">请选择姓名</ui-col>
     </ui-row>
     <ui-row class="mb-20">
       <ui-col width="100" align="left" vertical-align="middle" class="pl-20">电话：</ui-col>
-      <ui-col class="border-1px">请选择电话</ui-col>
+      <ui-col class="border-1px padding-5">请选择电话</ui-col>
     </ui-row>
     <ui-row class="border-bottom-dashed-1px mb-10"></ui-row>
     <ui-row>
@@ -91,6 +91,9 @@ export default {
   }
   .pl-20 {
     padding-left: 20px;
+  }
+  .padding-5 {
+    padding: 5px;
   }
   .border-1px {
     .mix-1px(1, 1, 1, 1, #ccc);
