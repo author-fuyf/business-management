@@ -1,7 +1,57 @@
 <!--release.ui-->
 <template>
-  <ui-page>
-    我是发布
+  <ui-page class="release">
+    <ui-row>
+      <ui-col width="100" align="left" vertical-align="middle">
+        <ui-view>所属行业：</ui-view>
+      </ui-col>
+      <ui-col>
+        <ui-view class="sample_content">
+          <ui-picker title="" range="{{ list }}" value="{{ value }}" bindchange="handleChange"></ui-picker>
+        </ui-view>
+      </ui-col>
+    </ui-row>
+    <ui-row class="border-bottom-dashed-1px mb-10"></ui-row>
+    <ui-row>
+      <ui-col width="100" align="left" vertical-align="middle">
+        <ui-view>期望服务区域：</ui-view>
+      </ui-col>
+      <ui-col></ui-col>
+    </ui-row>
+    <ui-row class="mb-20">
+      <ui-col width="100" align="left" vertical-align="middle" class="pl-20">省份：</ui-col>
+      <ui-col class="border-1px">请选择省份</ui-col>
+    </ui-row>
+    <ui-row class="mb-20">
+      <ui-col width="100" align="left" vertical-align="middle" class="pl-20">城市：</ui-col>
+      <ui-col class="border-1px">请选择城市</ui-col>
+    </ui-row>
+    <ui-row class="mb-20">
+      <ui-col width="100" align="left" vertical-align="middle" class="pl-20">区县：</ui-col>
+      <ui-col class="border-1px">请选择区县</ui-col>
+    </ui-row>
+    <ui-row class="border-bottom-dashed-1px mb-10"></ui-row>
+    <ui-row class="mb-20">
+      <ui-col width="100" align="left" vertical-align="middle" class="pl-20">姓名：</ui-col>
+      <ui-col class="border-1px">请选择姓名</ui-col>
+    </ui-row>
+    <ui-row class="mb-20">
+      <ui-col width="100" align="left" vertical-align="middle" class="pl-20">电话：</ui-col>
+      <ui-col class="border-1px">请选择电话</ui-col>
+    </ui-row>
+    <ui-row class="border-bottom-dashed-1px mb-10"></ui-row>
+    <ui-row>
+      <ui-col width="100" align="left" vertical-align="middle">需求简述：</ui-col>
+      <ui-col>
+      </ui-col>
+    </ui-row>
+    <ui-row>
+      <ui-col class="mt-10">
+        <ui-view class="sample_content">
+          <ui-textarea height="80" name="detail" placeholder="请简单对需求进行描述" show-counter="false"></ui-textarea>
+        </ui-view>
+      </ui-col>
+    </ui-row>
   </ui-page>
 </template>
 
@@ -11,13 +61,45 @@ export default {
     navigationBarTitleText: "信息发布"
   },
   data() {
-    return {}
+    return {
+      list: ["中国", "美国", "巴西", "日本"],
+      value: 1
+    };
   },
-  methods: {},
+  methods: {
+    handleChange(val) {
+      this.value = val;
+    },
+    resetPickerr00() {
+      this.value = 0;
+    }
+  },
   mounted() {}
-}
+};
 </script>
 
 <style lang="less">
-
+.release {
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  .mt-10 {
+    margin-top: 10px;
+  }
+  .pl-20 {
+    padding-left: 20px;
+  }
+  .border-1px {
+    .mix-1px(1, 1, 1, 1, #ccc);
+  }
+  .border-bottom-dashed-1px {
+    .mix-dashed-1px(0, 0, 1, 0, #666);
+  }
+  .ui-page-content {
+    padding: 10px 2.5% 0 2.5%;
+  }
+}
 </style>
