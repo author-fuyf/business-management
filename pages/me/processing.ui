@@ -1,0 +1,201 @@
+<template>
+  <ui-page class="procsssing">
+    <!-- <ui-row class="search-container">
+      <ui-col vertical-align="middle">
+        <ui-view class="search-input">
+          <ui-input type="text" ui:model="{{ searchText }}" bindinput="handleInput" placeholder="请输入查询信息"></ui-input>
+        </ui-view>
+      </ui-col>
+      <ui-col width="50" class="search-btn" align="left" vertical-align="middle">
+        <ui-view style="width: 100%;">
+          <ui-view>查询</ui-view>
+        </ui-view>
+      </ui-col>
+    </ui-row>-->
+    <ui-view class="search-container" height="{{ searchHeight }}">
+      <ui-input
+        class="search-input"
+        type="text"
+        ui:model="{{ searchText }}"
+        bindinput="handleInput"
+        placeholder="请输入查询信息"
+      ></ui-input>
+      <ui-view class="search-btn">查询</ui-view>
+    </ui-view>
+    <ui-scroll-view scroll-y height="{{height - 48}}">
+      <ui-view class="top_tip">
+        <ui-row height="80" border-bottom bindtap="goDetail">
+          <ui-col width="80" align="center" vertical-align="middle">
+            <ui-view class="left_icon left_icon1">
+              <ui-icon name="api-access" color="#fff" size="20"></ui-icon>
+            </ui-view>
+          </ui-col>
+          <ui-col class="text" align="left" vertical-align="middle" space="20">
+            <ui-view style="width: 100%;">
+              <ui-row height="30">
+                <ui-col align="left" vertical-align="middle">
+                  <ui-text>票房总结</ui-text>
+                </ui-col>
+                <ui-col align="right" width="100" vertical-align="middle" space-right="10">
+                  <ui-text>09-18</ui-text>
+                </ui-col>
+              </ui-row>
+              <ui-view>第37周|总票房8.11亿较上周上涨4.38%，《猩猿崛起》突破票房10亿</ui-view>
+            </ui-view>
+          </ui-col>
+        </ui-row>
+        <ui-row height="80" border-bottom>
+          <ui-col width="80" align="center" vertical-align="middle">
+            <ui-view class="left_icon left_icon2">
+              <ui-icon name="api-network" color="#fff" size="20"></ui-icon>
+            </ui-view>
+          </ui-col>
+          <ui-col class="text" align="left" vertical-align="middle" space="20">
+            <ui-view style="width: 100%;">
+              <ui-row height="30">
+                <ui-col align="left" vertical-align="middle">
+                  <ui-text>广播</ui-text>
+                </ui-col>
+                <ui-col align="right" width="100" vertical-align="middle" space-right="10">
+                  <ui-text>08-28</ui-text>
+                </ui-col>
+              </ui-row>
+              <ui-view>总票房9.60亿较上周 下降30.64%，《《战狼2》》突破票房10亿</ui-view>
+            </ui-view>
+          </ui-col>
+        </ui-row>
+        <ui-row height="80" border-bottom ui:for="{{10}}">
+          <ui-col width="80" align="center" vertical-align="middle">
+            <ui-view class="left_icon left_icon3">
+              <ui-icon name="api-configure" color="#fff" size="20"></ui-icon>
+            </ui-view>
+          </ui-col>
+          <ui-col class="text" align="left" vertical-align="middle" space="20">
+            <ui-view style="width: 100%;">
+              <ui-row height="30">
+                <ui-col align="left" vertical-align="middle">
+                  <ui-text>票房总结</ui-text>
+                </ui-col>
+                <ui-col align="right" width="100" vertical-align="middle" space-right="10">
+                  <ui-text>08-11</ui-text>
+                </ui-col>
+              </ui-row>
+              <ui-view>本周悬疑《《心理罪》》、喜剧《《鲛珠传》》、动作《《上船下套》》等多部电影在电影院上映。</ui-view>
+            </ui-view>
+          </ui-col>
+        </ui-row>
+      </ui-view>
+    </ui-scroll-view>
+  </ui-page>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '收藏夹'
+  },
+  data() {
+    return {
+      items: [],
+      offsetTop: ui.DEFAULT_HEADER_HEIGHT,
+      imgHeight: parseInt((ui.WIN_WIDTH / 1125) * 628),
+      customStyle: {
+        'background-color': '#eee',
+        height: '46px',
+        'line-height': '46px'
+      },
+      searchText: '',
+      height: ui.DEFAULT_CONTENT_HEIGHT,
+      searchHeight: 38
+    }
+  },
+  methods: {
+    goDetail() {
+      ui.navigateTo({
+        url: '/pages/corporate-information/corporateInformation'
+      })
+    },
+    handleInput() {
+      console.log('input')
+    },
+    sliderShow() {
+      this.isShow = true
+    },
+    navHandle() {
+      ui.navigateTo({
+        url: '/pages/detail'
+      })
+    }
+  },
+  mounted() {
+    //首屏页面需要在mounted中延时才能调用框架api，其他页面不需要延时
+    // setTimeout(() => {
+    //   //关闭app启动图
+    //   ui.closeSplashscreen()
+    // }, 1000)
+    for (let i = 1; i <= 50; i++) {
+      this.items.push(i + ' - 内容文本')
+    }
+  }
+}
+</script>
+
+<style lang="less">
+.procsssing {
+  background: white !important;
+  .ui-page-content {
+    padding-top: 10px;
+  }
+  .search-container {
+    width: 95%;
+    margin: 0 auto;
+    // margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    // position: absolute;
+    // top: 10px;
+    // left: 2.5%;
+    .search-input {
+      border-radius: 0;
+    }
+    .search-btn {
+      width: 15%;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      background: #00b050;
+      color: white;
+    }
+  }
+  .top_tip {
+    .ui-row {
+      background-color: #fff;
+    }
+    .left_icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fcb300;
+      text-align: center;
+      line-height: 50px;
+    }
+    .left_icon2 {
+      background-color: #ff7360;
+    }
+    .left_icon3 {
+      background-color: #39ccc5;
+    }
+    .text {
+      .ui-text {
+        font-size: 16px;
+        color: #313338;
+      }
+      .ui-view {
+        color: #9c9fa4;
+        font-size: 12px;
+        // .mix-text-overflow ();
+      }
+    }
+  }
+}
+</style>

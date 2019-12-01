@@ -44,3 +44,27 @@
 .icon-collection-select:before {
   content: "\e632";
 }
+
+.icon-resources:before {
+  content: "\e63d";
+}
+
+.icon-favorites:before {
+  content: "\e610";
+}
+
+.icon-promote:before {
+  content: "\e61d";
+}
+
+.icon-my-release:before {
+  content: "\e71f";
+}
+
+.icon-processing:before {
+  content: "\e62c";
+}
+
+.icon-close:before {
+  content: "\e600";
+}

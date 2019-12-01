@@ -1,85 +1,110 @@
+<!--me.ui-->
 <template>
-    <ui-page >
-      <ui-nav-bar slot="nav-bar"  class="nav_bar">
-        <ui-row height="46">
-          <ui-col vertical-align="middle" align="center" width="50">
-            <ui-icon name="ring" size="24" color="#fff"></ui-icon>
-          </ui-col>
-          <ui-col vertical-align="middle" align="center">
-            <ui-view class="nav_title">我的</ui-view>
-          </ui-col>
-          <ui-col vertical-align="middle" align="center" width="50">
-            <ui-icon name="setting" size="24" color="#fff"></ui-icon>
-          </ui-col>
-        </ui-row>
-      </ui-nav-bar>
-      <ui-view class="user_content">
-        <ui-row height="150" class="header_top">
-          <ui-col vertical-align="middle" align="center" width="90">
-            <ui-view class="head_portrait">
-            </ui-view>
-            <ui-image
-            src="{{ portraitUrl }}"
-            mode='aspectFill'
-            width="60"
-            height="60"
-            class="head_portrait"
-            ></ui-image>
-          </ui-col>
-          <ui-col vertical-align="middle" align="left">
-            <ui-view class="login">立即登录</ui-view>
-            <ui-view class="login_after">登录后可享受更多特权</ui-view>
-          </ui-col>
-          <ui-col vertical-align="middle" align="right" width="50" space-right="15">
-            <ui-icon name="arrow-right" size="18" color="#fff"></ui-icon>
-          </ui-col>
-        </ui-row>
-        
-      </ui-view>
-    </ui-page>
+  <ui-page class="me">
+    <ui-row>
+      <img src="http://img0.imgtn.bdimg.com/it/u=3268705469,2646819851&fm=26&gp=0.jpg" alt="" class="banner-img">
+    </ui-row>
+    <ui-row class="border-bottom-dashed-1px"></ui-row>
+    <ui-row-list>
+      <ui-row height="50" style="width: 100%;">
+        <ui-col width="40" vertical-align="middle">
+          <ui-icon type="promote" size="22"></ui-icon>
+        </ui-col>
+        <ui-col class="text" style="lineHeight: 50px">加入推广</ui-col>
+        <ui-col width="40" vertical-align="middle">
+          <ui-icon type="arrow-right"></ui-icon>
+        </ui-col>
+      </ui-row>
+      <ui-row height="50" style="width: 100%;" bindtap="goResources">
+        <ui-col width="40" vertical-align="middle">
+          <ui-icon type="resources" size="22"></ui-icon>
+        </ui-col>
+        <ui-col class="text" style="lineHeight: 50px">项目资源</ui-col>
+        <ui-col width="40" vertical-align="middle">
+          <ui-icon type="arrow-right"></ui-icon>
+        </ui-col>
+      </ui-row>
+      <ui-row height="50" style="width: 100%;" bindtap="goMyRelease">
+        <ui-col width="40" vertical-align="middle">
+          <ui-icon type="my-release" size="22"></ui-icon>
+        </ui-col>
+        <ui-col class="text" style="lineHeight: 50px">我的发布</ui-col>
+        <ui-col width="40" vertical-align="middle">
+          <ui-icon type="arrow-right"></ui-icon>
+        </ui-col>
+      </ui-row>
+      <ui-row height="50" style="width: 100%;" class="row-border-bottom" bindtap="goProcessing">
+        <ui-col width="40" vertical-align="middle">
+          <ui-icon type="processing" size="22"></ui-icon>
+        </ui-col>
+        <ui-col class="text" style="lineHeight: 50px">收藏夹</ui-col>
+        <ui-col width="40" vertical-align="middle">
+          <ui-icon type="arrow-right"></ui-icon>
+        </ui-col>
+      </ui-row>
+    </ui-row-list>
+  </ui-page>
 </template>
 
 <script>
 export default {
   config: {
-    navigationStyle: 'custom',
-    navigationBarTextStyle: 'white',
-    backgroundColor: '#F4F4F4'
+    navigationBarTitleText: "我的"
   },
-  data () {
-    return {
-      portraitUrl: require('#/images/portrait_bg.png')
-    }
+  data() {
+    return {};
   },
   methods: {
-
-  }
-}
-
+    goResources() {
+      ui.navigateTo({
+        url: '/pages/me/resources'
+      })
+    },
+    goMyRelease() {
+      ui.navigateTo({
+        url: '/pages/me/my-release'
+      })
+    },
+    goProcessing() {
+      ui.navigateTo({
+        url: '/pages/me/processing'
+      })
+    }
+  },
+  mounted() {}
+};
 </script>
 
 <style lang="less">
-
-.nav_bar {
-    background: @theme-color;
-    .nav_title {
-        color: #fff;
+.me {
+  .border-1px {
+    .mix-1px(1, 1, 1, 1, #ccc);
+  }
+  .border-bottom-dashed-1px {
+    .mix-dashed-1px(0, 0, 1, 0, #666);
+    margin: 20px 0;
+  }
+  .ui-page-content {
+    padding: 10px 2.5% 0 2.5%;
+    .banner-img {
+      width: 100%;
+      height: 250px;
     }
+
+    .row-border-bottom::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      border-bottom: 1px solid #C7C7C7;
+      color: #C7C7C7;
+      -webkit-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+    }
+  }
 }
-
-.header_top {
-    background: @theme-color;
-    .head_portrait {
-      border-radius: 50%; 
-    }
-    .login {
-      color: #fff;
-      font-size: 18px;
-    }
-    .login_after {
-        color: #fff;
-        font-size: 12px;
-    }
-}
-
 </style>

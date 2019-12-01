@@ -1,0 +1,104 @@
+<template>
+  <ui-page class="resources">
+    <ui-scroll-view scroll-y height="{{height}}">
+      <ui-view class="top_tip">
+        <ui-row height="80" border-bottom>
+          <ui-col width="80" align="center" vertical-align="middle">
+            <ui-view class="left_icon left_icon1">
+              <ui-icon name="api-access" color="#fff" size="20"></ui-icon>
+            </ui-view>
+          </ui-col>
+          <ui-col class="text" align="left" vertical-align="middle" space="20">
+            <ui-view style="width: 100%;">
+              <ui-row height="30">
+                <ui-col align="left" vertical-align="middle">
+                  <ui-text>票房总结</ui-text>
+                </ui-col>
+                <ui-col align="right" width="100" vertical-align="middle" space-right="10">
+                  <ui-text>09-18</ui-text>
+                </ui-col>
+              </ui-row>
+              <ui-view>第37周|总票房8.11亿较上周上涨4.38%，《猩猿崛起》突破票房10亿</ui-view>
+            </ui-view>
+          </ui-col>
+        </ui-row>
+        <ui-row height="80" border-bottom>
+          <ui-col width="80" align="center" vertical-align="middle">
+            <ui-view class="left_icon left_icon2">
+              <ui-icon name="api-network" color="#fff" size="20"></ui-icon>
+            </ui-view>
+          </ui-col>
+          <ui-col class="text" align="left" vertical-align="middle" space="20">
+            <ui-view style="width: 100%;">
+              <ui-row height="30">
+                <ui-col align="left" vertical-align="middle">
+                  <ui-text>广播</ui-text>
+                </ui-col>
+                <ui-col align="right" width="100" vertical-align="middle" space-right="10">
+                  <ui-text>08-28</ui-text>
+                </ui-col>
+              </ui-row>
+              <ui-view>总票房9.60亿较上周 下降30.64%，《《战狼2》》突破票房10亿</ui-view>
+            </ui-view>
+          </ui-col>
+        </ui-row>
+      </ui-view>
+    </ui-scroll-view>
+  </ui-page>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '项目资源'
+  },
+  data() {
+    return {
+      height: ui.DEFAULT_CONTENT_HEIGHT,
+    }
+  },
+  methods: {
+  },
+  mounted() {
+  }
+}
+</script>
+
+<style lang="less">
+.resources {
+  background: white !important;
+  .ui-page-content {
+    padding-top: 10px;
+  }
+  .top_tip {
+    .ui-row {
+      background-color: #fff;
+    }
+    .left_icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fcb300;
+      text-align: center;
+      line-height: 50px;
+    }
+    .left_icon2 {
+      background-color: #ff7360;
+    }
+    .left_icon3 {
+      background-color: #39ccc5;
+    }
+    .text {
+      .ui-text {
+        font-size: 16px;
+        color: #313338;
+      }
+      .ui-view {
+        color: #9c9fa4;
+        font-size: 12px;
+        // .mix-text-overflow ();
+      }
+    }
+  }
+}
+</style>
