@@ -6,7 +6,7 @@
     </ui-row>
     <ui-row class="border-bottom-dashed-1px"></ui-row>
     <ui-row-list>
-      <ui-row height="50" style="width: 100%;">
+      <ui-row height="50" style="width: 100%;" bindtap="goPromte">
         <ui-col width="40" vertical-align="middle">
           <ui-icon type="promote" size="22"></ui-icon>
         </ui-col>
@@ -55,6 +55,11 @@ export default {
     return {};
   },
   methods: {
+    goPromte() {
+      ui.navigateTo({
+        url: '/pages/me/join-promote'
+      })
+    },
     goResources() {
       ui.navigateTo({
         url: '/pages/me/resources'

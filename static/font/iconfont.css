@@ -68,3 +68,7 @@
 .icon-close:before {
   content: "\e600";
 }
+
+.icon-upload:before {
+  content: "\e6f7";
+}

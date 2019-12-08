@@ -64,7 +64,7 @@
             </ui-view>
           </ui-col>
         </ui-row>
-        <ui-row height="80" border-bottom ui:for="{{10}}">
+        <ui-row height="80" border-bottom ui:for="{{2}}">
           <ui-col width="80" align="center" vertical-align="middle">
             <ui-view class="left_icon left_icon3">
               <ui-icon name="api-configure" color="#fff" size="20"></ui-icon>

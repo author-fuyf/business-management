@@ -1,0 +1,244 @@
+<!--加入推广-->
+<template>
+  <ui-page class="join-promote">
+    <ui-view class="form-container">
+      <ui-view class="form-item border-bottom-dashed-1px">
+        <div class="form-label">
+          <span>企业名称</span>
+        </div>
+        <div class="form-right">
+          <input type="text" placeholder="请输入企业名称">
+        </div>
+      </ui-view>
+      <ui-view class="form-item border-bottom-dashed-1px">
+        <div class="form-label">
+          <span>所属行业</span>
+        </div>
+        <div class="form-right">
+          <input type="text" placeholder="请输入所属行业">
+        </div>
+      </ui-view>
+      <ui-view class="form-item border-bottom-dashed-1px">
+        <div class="form-label">
+          <span>地址</span>
+        </div>
+        <div class="form-right">
+          <input type="text" placeholder="请输入地址">
+        </div>
+      </ui-view>
+      <ui-view class="form-item border-bottom-dashed-1px">
+        <div class="form-label">
+          <span>企业名称</span>
+        </div>
+        <div class="form-right">
+          <input type="text" placeholder="请输入企业名称">
+        </div>
+      </ui-view>
+      <ui-view class="form-item border-bottom-dashed-1px">
+        <div class="form-label">
+          <span>联系人</span>
+        </div>
+        <div class="form-right">
+          <input type="text" placeholder="请输入联系人">
+        </div>
+      </ui-view>
+      <ui-view class="form-item border-bottom-dashed-1px">
+        <div class="form-label">
+          <span>电话</span>
+        </div>
+        <div class="form-right">
+          <input type="text" placeholder="请输入电话">
+        </div>
+      </ui-view>
+      <ui-view class="form-item border-bottom-dashed-1px">
+        <div class="form-label">
+          <span>邮箱</span>
+        </div>
+        <div class="form-right">
+          <input type="text" placeholder="请输入邮箱">
+        </div>
+      </ui-view>
+      <ui-view class="form-item">
+        <div class="form-label">
+          <span>公司彩页</span>
+        </div>
+      </ui-view>
+      <div class="cover-container border-bottom-dashed-1px">
+        <div class="cover-left">
+          <div class="img-list">
+            <img src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2458227883,4095122505&fm=26&gp=0.jpg" alt="" ui:for="{{3}}" :class="{'ml-5': index !== 0 && index % 3 !== 0, 'mt-5': index > 2}">
+            <div style="clear: both"></div>
+          </div>
+          <p class="mt-5">最多上传3张采彩页，建议6:9图片</p>
+        </div>
+        <div class="upload-right">
+          <div class="upload-icon">
+            <img src="./img/upload.png" alt="">
+            <p>选择上传</p>
+          </div>
+        </div>
+      </div>
+      <ui-row-list class="row-list border-bottom-dashed-1px">
+        <ui-view class="title">产品列表：</ui-view>
+        <ui-row height="50" style="width: 90%;marginLeft: 10%;">
+          <ui-col class="text" style="lineHeight: 50px">进销存管理系统</ui-col>
+          <ui-col width="40" vertical-align="middle">
+            <ui-icon type="arrow-right"></ui-icon>
+          </ui-col>
+        </ui-row>
+        <ui-row height="50" style="width: 90%;marginLeft: 10%;" class="list-bottom-border">
+          <ui-col class="text" style="lineHeight: 50px">GRM客户关系管理系统</ui-col>
+          <ui-col width="40" vertical-align="middle">
+            <ui-icon type="arrow-right"></ui-icon>
+          </ui-col>
+        </ui-row>
+      </ui-row-list>
+      <div  class="company-introduction">
+        <ui-row>
+          <ui-col width="100" align="left" vertical-align="middle">公司介绍</ui-col>
+          <ui-col>
+          </ui-col>
+        </ui-row>
+        <ui-row>
+          <ui-col class="mt-10">
+            <ui-view class="sample_content">
+              <ui-textarea height="80" name="detail" placeholder="请输入公司介绍" show-counter="false"></ui-textarea>
+            </ui-view>
+          </ui-col>
+        </ui-row>
+      </div>
+      <div class="bottom-botton">
+        <span class="save-btn">保存</span>
+      </div>
+    </ui-view>
+  </ui-page>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: "加入推广"
+  },
+  data() {
+    return {};
+  },
+  methods: {},
+  mounted() {}
+};
+</script>
+
+<style lang="less">
+.join-promote {
+  .border-1px {
+    .mix-1px(1, 1, 1, 1, #ccc);
+  }
+  .border-bottom-dashed-1px {
+    .mix-dashed-1px(0, 0, 1, 0, #666);
+  }
+
+  .mt-5 {
+    margin-top: 5px;
+  }
+  .ui-page-content {
+    padding: 10px 2.5% 0 2.5%;
+    .form-container {
+      width: 100%;
+      .form-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        .form-label {
+          width: 20%;
+        }
+        .form-right {
+          width: 80%;
+          input {
+            width: 100%;
+            outline: none;
+          }
+        }
+      }
+
+      .cover-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        .cover-left {
+          width: 60%;
+          color: #c0504d;
+          .img-list {
+            img {
+              display: block;
+              float: left;
+              width: 30%;
+              height: 65px;
+            }
+            img.ml-5 {
+              margin-left: 5%;
+            }
+            img.mt-5 {
+              margin-top: 5%;
+            }
+          }
+        }
+        .upload-right {
+          width: 40%;
+          text-align: right;
+          color: #558ed5;
+          .upload-icon {
+            width: 100%;
+            height: 65px;
+            img {
+              width: 50px;
+              height: 40px;
+            }
+          }
+        }
+      }
+
+      .row-list {
+        padding: 15px 0;
+        .list-bottom-border::after {
+          content: " ";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 1px;
+          border-bottom: 1px solid #c7c7c7;
+          color: #c7c7c7;
+          -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+        }
+      }
+    }
+    .company-introduction {
+      padding: 15px 0;
+      margin-bottom: 30px;
+    }
+
+    .bottom-botton {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      color: white;
+      background: #00B050;
+      border-radius: 5px;
+      text-align: center;
+      position: fixed;
+      bottom: 5px;
+      left: 2.5%;
+      width: 95%;
+      // .save-btn {
+      //   display: inline-block;
+      //   padding: 5px 40px;
+        
+      // }
+    }
+  }
+}
+</style>

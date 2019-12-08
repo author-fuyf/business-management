@@ -6,7 +6,7 @@ export default {
       'pages/corporate-information/corporateInformation',
       'pages/production-information/productionInformation',
       'pages/me/resources'
-    ,"pages/me/my-release","pages/me/processing"],
+    ,"pages/me/my-release","pages/me/processing","pages/me/join-promote"],
     theme: {
       'theme-color': '#3399ff'
     },
