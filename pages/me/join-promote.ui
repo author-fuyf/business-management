@@ -233,11 +233,6 @@ export default {
       bottom: 5px;
       left: 2.5%;
       width: 95%;
-      // .save-btn {
-      //   display: inline-block;
-      //   padding: 5px 40px;
-        
-      // }
     }
   }
 }

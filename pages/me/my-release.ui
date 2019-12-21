@@ -96,7 +96,6 @@ export default {
       .ui-view {
         color: #9c9fa4;
         font-size: 12px;
-        // .mix-text-overflow ();
       }
     }
   }

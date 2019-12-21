@@ -13,13 +13,13 @@
       </ui-col>
     </ui-row>-->
     <ui-view class="search-container" height="{{ searchHeight }}">
-      <ui-input
+      <input
         class="search-input"
         type="text"
         ui:model="{{ searchText }}"
         bindinput="handleInput"
         placeholder="请输入查询信息"
-      ></ui-input>
+      >
       <ui-view class="search-btn">查询</ui-view>
     </ui-view>
     <ui-scroll-view scroll-y height="{{height - 48 - 56}}">
@@ -193,7 +193,6 @@ export default {
       .ui-view {
         color: #9c9fa4;
         font-size: 12px;
-        // .mix-text-overflow ();
       }
     }
   }
