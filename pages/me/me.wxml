@@ -1,0 +1,68 @@
+<view class="me">
+  <view class="ui-row" style="">
+    <img src="http://img0.imgtn.bdimg.com/it/u=3268705469,2646819851&fm=26&gp=0.jpg" alt="" class="banner-img" />
+  </view>
+  <view class="border-bottom-dashed-1px ui-row" style=""></view>
+  <view class="ui-row-list" style="">
+    <view style="width: 100%;height:50px;" bindtap="goPromte" class="ui-row">
+      <view class="ui-col valign-middle" style="flex:0 0 40px;">
+        <view class="ui-col-content valign-middle">
+          <span type="promote" size="22" class="ui-icon icon-promote" style="font-size: 22px;"></span>
+        </view>
+      </view>
+      <view class="text ui-col" style="lineHeight: 50px;">
+        <view class="ui-col-content">加入推广</view>
+      </view>
+      <view class="ui-col valign-middle" style="flex:0 0 40px;">
+        <view class="ui-col-content valign-middle">
+          <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+        </view>
+      </view>
+    </view>
+    <view style="width: 100%;height:50px;" bindtap="goResources" class="ui-row">
+      <view class="ui-col valign-middle" style="flex:0 0 40px;">
+        <view class="ui-col-content valign-middle">
+          <span type="resources" size="22" class="ui-icon icon-resources" style="font-size: 22px;"></span>
+        </view>
+      </view>
+      <view class="text ui-col" style="lineHeight: 50px;">
+        <view class="ui-col-content">项目资源</view>
+      </view>
+      <view class="ui-col valign-middle" style="flex:0 0 40px;">
+        <view class="ui-col-content valign-middle">
+          <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+        </view>
+      </view>
+    </view>
+    <view style="width: 100%;height:50px;" bindtap="goMyRelease" class="ui-row">
+      <view class="ui-col valign-middle" style="flex:0 0 40px;">
+        <view class="ui-col-content valign-middle">
+          <span type="my-release" size="22" class="ui-icon icon-my-release" style="font-size: 22px;"></span>
+        </view>
+      </view>
+      <view class="text ui-col" style="lineHeight: 50px;">
+        <view class="ui-col-content">我的发布</view>
+      </view>
+      <view class="ui-col valign-middle" style="flex:0 0 40px;">
+        <view class="ui-col-content valign-middle">
+          <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+        </view>
+      </view>
+    </view>
+    <view style="width: 100%;height:50px;" class="row-border-bottom ui-row" bindtap="goProcessing">
+      <view class="ui-col valign-middle" style="flex:0 0 40px;">
+        <view class="ui-col-content valign-middle">
+          <span type="processing" size="22" class="ui-icon icon-processing" style="font-size: 22px;"></span>
+        </view>
+      </view>
+      <view class="text ui-col" style="lineHeight: 50px;">
+        <view class="ui-col-content">收藏夹</view>
+      </view>
+      <view class="ui-col valign-middle" style="flex:0 0 40px;">
+        <view class="ui-col-content valign-middle">
+          <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

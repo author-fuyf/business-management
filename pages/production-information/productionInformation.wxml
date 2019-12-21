@@ -1,0 +1,49 @@
+<view class="production-information">
+  <view class="demo imgHeight">
+    <ui-ex-swiper pagination="" autoplay="{{ autoplay }}" _pid="{{_pid}}">
+      <ui-ex-swiper-item class="bc_green" _pid="{{_pid}}">1</ui-ex-swiper-item>
+      <ui-ex-swiper-item class="bc_red" _pid="{{_pid}}">2</ui-ex-swiper-item>
+      <ui-ex-swiper-item class="bc_blue" _pid="{{_pid}}">3</ui-ex-swiper-item>
+    </ui-ex-swiper>
+  </view>
+  <scroll-view scroll-y style="height: {{height - imgHeight - 30}}px;">
+    <view class="form-item ui-row" style="">
+      <view class="item-left ui-col ui-col-4" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content">产品名称：</view>
+      </view>
+      <view class="color-7f ui-col" style="">
+        <view class="ui-col-content">进销库存管理系统</view>
+      </view>
+    </view>
+    <view class="form-item ui-row" style="">
+      <view class="item-left ui-col ui-col-4" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content">联系人：</view>
+      </view>
+      <view class="color-7f ui-col" style="">
+        <view class="ui-col-content">李国涛</view>
+      </view>
+    </view>
+    <view class="form-item contact-number ui-row" style="">
+      <view class="item-left ui-col ui-col-4" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content">联系电话：</view>
+      </view>
+      <view class="color-7f ui-col" style="">
+        <view class="ui-col-content">18301735240</view>
+      </view>
+      <span type="phone" size="25" color="#666666" class="icon-phone ui-icon icon-phone" style="color: #666666;font-size: 25px;"></span>
+    </view>
+    <view class="form-item ui-row" style="">
+      <view class="item-left ui-col ui-col-4" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content">产品介绍：</view>
+      </view>
+      <view class="color-7f ui-col" style="">
+        <view class="ui-col-content"></view>
+      </view>
+    </view>
+    <view class="form-item ui-row" style="">
+      <text selectable class="item-left color-7f">
+        万达集团创立于1988年，经过30年发展，已成为以现代服务业为主的大型跨国企业集团。万达是世界领先的不动产企业、世界领先的影视企业、世界领先的体育企业、世界领先的儿童产业企业。万达广场、万达影城、万达酒店、万达文化旅游城、万达宝贝王成为中国知名品牌。2018年企业资产6257亿元，收入2143亿元。
+      </text>
+    </view>
+  </scroll-view>
+</view>

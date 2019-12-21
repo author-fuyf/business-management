@@ -1,0 +1,66 @@
+/* 1像素解决方案 */
+/*
+ * 清除1px
+ */
+/*
+ * 清除浮动
+ */
+/*
+ * mobile
+ */
+/*
+ * 1px
+ */
+/*
+ * text
+ */
+/* 垂直居中 */
+/* 水平居中 */
+/* 水平垂直居中 */
+/* 超出部分出省略号 */
+/* 多行文本超出部分省略号 */
+.production-information .color-7f {
+  color: #7f7f7f;
+}
+.production-information .demo {
+  margin-bottom: 10px;
+}
+.production-information .demo .container {
+  padding: 5px 10px;
+}
+.production-information .demo .swiper-slide {
+  height: 200px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+}
+.production-information .demo .bc_green {
+  background-color: #7cc422;
+}
+.production-information .demo .bc_red {
+  background-color: #ffa060;
+}
+.production-information .demo .bc_blue {
+  background-color: #46d1e4;
+}
+.production-information .ui-page-content {
+  padding: 10px 2.5% 0 2.5%;
+}
+.production-information .ui-page-content .form-item {
+  margin-bottom: 5px;
+}
+.production-information .ui-page-content .form-item .item-left {
+  padding-left: 5%;
+}
+.production-information .ui-page-content .contact-number {
+  position: relative;
+}
+.production-information .ui-page-content .contact-number .icon-phone {
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+.production-information .ui-page-content .title {
+  font-size: 16px;
+  font-weight: 500;
+}

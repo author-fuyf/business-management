@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ui-ex-swiper": "touchui-wx-components/ui-ex-swiper",
+    "ui-ex-swiper-item": "touchui-wx-components/ui-ex-swiper-item"
+  },
+  "navigationBarTitleText": "产品信息"
+}

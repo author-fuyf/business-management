@@ -1,0 +1,126 @@
+<view class="join-promote">
+  <view class="form-container">
+    <view class="form-item border-bottom-dashed-1px">
+      <div class="form-label">
+        <span>企业名称</span>
+      </div>
+      <div class="form-right">
+        <input type="text" placeholder="请输入企业名称"></input>
+      </div>
+    </view>
+    <view class="form-item border-bottom-dashed-1px">
+      <div class="form-label">
+        <span>所属行业</span>
+      </div>
+      <div class="form-right">
+        <input type="text" placeholder="请输入所属行业"></input>
+      </div>
+    </view>
+    <view class="form-item border-bottom-dashed-1px">
+      <div class="form-label">
+        <span>地址</span>
+      </div>
+      <div class="form-right">
+        <input type="text" placeholder="请输入地址"></input>
+      </div>
+    </view>
+    <view class="form-item border-bottom-dashed-1px">
+      <div class="form-label">
+        <span>企业名称</span>
+      </div>
+      <div class="form-right">
+        <input type="text" placeholder="请输入企业名称"></input>
+      </div>
+    </view>
+    <view class="form-item border-bottom-dashed-1px">
+      <div class="form-label">
+        <span>联系人</span>
+      </div>
+      <div class="form-right">
+        <input type="text" placeholder="请输入联系人"></input>
+      </div>
+    </view>
+    <view class="form-item border-bottom-dashed-1px">
+      <div class="form-label">
+        <span>电话</span>
+      </div>
+      <div class="form-right">
+        <input type="text" placeholder="请输入电话"></input>
+      </div>
+    </view>
+    <view class="form-item border-bottom-dashed-1px">
+      <div class="form-label">
+        <span>邮箱</span>
+      </div>
+      <div class="form-right">
+        <input type="text" placeholder="请输入邮箱"></input>
+      </div>
+    </view>
+    <view class="form-item">
+      <div class="form-label">
+        <span>公司彩页</span>
+      </div>
+    </view>
+    <div class="cover-container border-bottom-dashed-1px">
+      <div class="cover-left">
+        <div class="img-list">
+          <img src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2458227883,4095122505&fm=26&gp=0.jpg" alt="" :class="{'ml-5': index !== 0 && index % 3 !== 0, 'mt-5': index > 2}" wx:for="{{3}}" />
+          <div style="clear: both"></div>
+        </div>
+        <p class="mt-5">最多上传3张采彩页，建议6:9图片</p>
+      </div>
+      <div class="upload-right">
+        <div class="upload-icon">
+          <img src="./img/upload.png" alt="" />
+          <p>选择上传</p>
+        </div>
+      </div>
+    </div>
+    <view class="row-list border-bottom-dashed-1px ui-row-list" style="">
+      <view class="title">产品列表：</view>
+      <view style="width: 90%;marginLeft: 10%;height:50px;" class="ui-row">
+        <view class="text ui-col" style="lineHeight: 50px;">
+          <view class="ui-col-content">进销存管理系统</view>
+        </view>
+        <view class="ui-col valign-middle" style="flex:0 0 40px;">
+          <view class="ui-col-content valign-middle">
+            <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+          </view>
+        </view>
+      </view>
+      <view style="width: 90%;marginLeft: 10%;height:50px;" class="list-bottom-border ui-row">
+        <view class="text ui-col" style="lineHeight: 50px;">
+          <view class="ui-col-content">GRM客户关系管理系统</view>
+        </view>
+        <view class="ui-col valign-middle" style="flex:0 0 40px;">
+          <view class="ui-col-content valign-middle">
+            <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+          </view>
+        </view>
+      </view>
+    </view>
+    <div class="company-introduction">
+      <view class="ui-row" style="">
+        <view class="ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+          <view class="ui-col-content align-left valign-middle">公司介绍</view>
+        </view>
+        <view class="ui-col" style="">
+          <view class="ui-col-content">
+          </view>
+        </view>
+      </view>
+      <view class="ui-row" style="">
+        <view class="mt-10 ui-col" style="">
+          <view class="ui-col-content">
+            <view class="sample_content">
+              <textarea height="80" name="detail" placeholder="请输入公司介绍" show-counter="false"></textarea>
+            </view>
+          </view>
+        </view>
+      </view>
+    </div>
+    <div class="bottom-botton">
+      <span class="save-btn">保存</span>
+    </div>
+  </view>
+</view>

@@ -1,0 +1,69 @@
+/* 1像素解决方案 */
+/*
+ * 清除1px
+ */
+/*
+ * 清除浮动
+ */
+/*
+ * mobile
+ */
+/*
+ * 1px
+ */
+/*
+ * text
+ */
+/* 垂直居中 */
+/* 水平居中 */
+/* 水平垂直居中 */
+/* 超出部分出省略号 */
+/* 多行文本超出部分省略号 */
+.search-cooperation-index {
+  background: white !important;
+}
+.search-cooperation-index .ui-page-content {
+  padding-top: 10px;
+}
+.search-cooperation-index .search-container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.search-cooperation-index .search-container .search-input {
+  border-radius: 0;
+}
+.search-cooperation-index .search-container .search-btn {
+  width: 15%;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background: #00b050;
+  color: white;
+}
+.search-cooperation-index .top_tip .ui-row {
+  background-color: #fff;
+}
+.search-cooperation-index .top_tip .left_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fcb300;
+  text-align: center;
+  line-height: 50px;
+}
+.search-cooperation-index .top_tip .left_icon2 {
+  background-color: #ff7360;
+}
+.search-cooperation-index .top_tip .left_icon3 {
+  background-color: #39ccc5;
+}
+.search-cooperation-index .top_tip .text text {
+  font-size: 16px;
+  color: #313338;
+}
+.search-cooperation-index .top_tip .text view {
+  color: #9c9fa4;
+  font-size: 12px;
+}

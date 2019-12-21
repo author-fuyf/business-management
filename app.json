@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/search-cooperation/index",
+    "pages/corporate-information/corporateInformation",
+    "pages/production-information/productionInformation",
+    "pages/me/resources",
+    "pages/me/my-release",
+    "pages/me/join-promote",
+    "pages/release/release",
+    "pages/me/me"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00B050",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#39f",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/search-cooperation/index",
+        "iconName": "search-cooperation",
+        "text": "找合作"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "iconName": "release",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconName": "me",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap76.json"
+}

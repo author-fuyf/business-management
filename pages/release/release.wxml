@@ -1,0 +1,87 @@
+<view class="release">
+  <view class="ui-row" style="">
+    <view class="ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+      <view class="ui-col-content align-left valign-middle">
+        <view>所属行业：</view>
+      </view>
+    </view>
+    <view class="ui-col" style="">
+      <view class="ui-col-content">
+        <view class="sample_content">
+          <picker title="" range="{{ list }}" value="{{ value }}" bindchange="handleChange"></picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="border-bottom-dashed-1px mb-10 ui-row" style=""></view>
+  <view class="ui-row" style="">
+    <view class="ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+      <view class="ui-col-content align-left valign-middle">
+        <view>期望服务区域：</view>
+      </view>
+    </view>
+    <view class="ui-col" style="">
+      <view class="ui-col-content"></view>
+    </view>
+  </view>
+  <view class="mb-20 ui-row" style="">
+    <view class="pl-20 ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+      <view class="ui-col-content align-left valign-middle">省份：</view>
+    </view>
+    <view class="border-1px padding-5 ui-col" style="">
+      <view class="ui-col-content">请选择省份</view>
+    </view>
+  </view>
+  <view class="mb-20 ui-row" style="">
+    <view class="pl-20 ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+      <view class="ui-col-content align-left valign-middle">城市：</view>
+    </view>
+    <view class="border-1px padding-5 ui-col" style="">
+      <view class="ui-col-content">请选择城市</view>
+    </view>
+  </view>
+  <view class="mb-20 ui-row" style="">
+    <view class="pl-20 ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+      <view class="ui-col-content align-left valign-middle">区县：</view>
+    </view>
+    <view class="border-1px padding-5 ui-col" style="">
+      <view class="ui-col-content">请选择区县</view>
+    </view>
+  </view>
+  <view class="border-bottom-dashed-1px mb-10 ui-row" style=""></view>
+  <view class="mb-20 ui-row" style="">
+    <view class="pl-20 ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+      <view class="ui-col-content align-left valign-middle">姓名：</view>
+    </view>
+    <view class="border-1px padding-5 ui-col" style="">
+      <view class="ui-col-content">请选择姓名</view>
+    </view>
+  </view>
+  <view class="mb-20 ui-row" style="">
+    <view class="pl-20 ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+      <view class="ui-col-content align-left valign-middle">电话：</view>
+    </view>
+    <view class="border-1px padding-5 ui-col" style="">
+      <view class="ui-col-content">请选择电话</view>
+    </view>
+  </view>
+  <view class="border-bottom-dashed-1px mb-10 ui-row" style=""></view>
+  <view class="ui-row" style="">
+    <view class="ui-col ui-col-align-left align-left valign-middle" style="flex:0 0 100px;">
+      <view class="ui-col-content align-left valign-middle">需求简述：</view>
+    </view>
+    <view class="ui-col" style="">
+      <view class="ui-col-content">
+      </view>
+    </view>
+  </view>
+  <view class="ui-row" style="">
+    <view class="mt-10 ui-col" style="">
+      <view class="ui-col-content">
+        <view class="sample_content">
+          <textarea height="80" name="detail" placeholder="请简单对需求进行描述" show-counter="false"></textarea>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
