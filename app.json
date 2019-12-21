@@ -15,22 +15,25 @@
   },
   "tabBar": {
     "color": "#7a7e83",
-    "selectedColor": "#39f",
+    "selectedColor": "#06C161",
     "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/search-cooperation/index",
-        "iconName": "search-cooperation",
+        "iconPath": "images/search-cooperation.png",
+        "selectedIconPath": "images/search-cooperation-select.png",
         "text": "找合作"
       },
       {
         "pagePath": "pages/release/release",
-        "iconName": "release",
+        "iconPath": "images/release.png",
+        "selectedIconPath": "images/release-select.png",
         "text": "发布"
       },
       {
         "pagePath": "pages/me/me",
-        "iconName": "me",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-select.png",
         "text": "我的"
       }
     ]

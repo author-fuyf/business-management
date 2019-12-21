@@ -1,16 +1,4 @@
 <view class="search-cooperation-index">
-  <!-- <ui-row class="search-container">
-      <ui-col vertical-align="middle">
-        <ui-view class="search-input">
-          <ui-input type="text" ui:model="{{ searchText }}" bindinput="handleInput" placeholder="请输入查询信息"></ui-input>
-        </ui-view>
-      </ui-col>
-      <ui-col width="50" class="search-btn" align="left" vertical-align="middle">
-        <ui-view style="width: 100%;">
-          <ui-view>查询</ui-view>
-        </ui-view>
-      </ui-col>
-    </ui-row>-->
   <view class="search-container" height="{{ searchHeight }}">
     <input class="search-input" type="text" ui:model="{{ searchText }}" bindinput="handleInput" placeholder="请输入查询信息"></input>
     <view class="search-btn">查询</view>
