@@ -7,7 +7,7 @@
   </view>
   <view class="content-container">
     <view class="cooperation-list">
-      <view class="list-item flex-space-between mix-1px-bottom-C6D9F1" wx:for="{{20}}">
+      <view class="list-item flex-space-between mix-1px-bottom-C6D9F1" wx:for="{{20}}" wx:key="index" bindtap="goDetail">
         <view class="left-icon">
           <text class="icon iconfont icon-search-cooperation"></text>
         </view>

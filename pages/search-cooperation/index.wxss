@@ -21,7 +21,7 @@ page .search-cooperation-index .search-container .input-box input {
   font-size: 14px;
 }
 page .search-cooperation-index .search-container .input-box input::placeholder {
-  color: #D9D9D9;
+  color: #EBEBEB;
 }
 page .search-cooperation-index .search-container .input-box .search-input {
   position: absolute;
