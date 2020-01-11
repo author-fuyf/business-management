@@ -22,13 +22,13 @@
       </view>
     </view>
   </ui-nav-bar>
-  <view class="demo imgHeight">
+  <!-- <view class="demo imgHeight">
     <ui-ex-swiper pagination="" autoplay="{{ autoplay }}" _pid="{{_pid}}">
       <ui-ex-swiper-item class="bc_green" _pid="{{_pid}}">1</ui-ex-swiper-item>
       <ui-ex-swiper-item class="bc_red" _pid="{{_pid}}">2</ui-ex-swiper-item>
       <ui-ex-swiper-item class="bc_blue" _pid="{{_pid}}">3</ui-ex-swiper-item>
     </ui-ex-swiper>
-  </view>
+  </view> -->
   <scroll-view scroll-y style="height: {{height - imgHeight - 30}}px;">
     <view class="form-item ui-row" style="">
       <view class="item-left ui-col ui-col-4" style="flex: 0 0 33.33333333333333%;">
