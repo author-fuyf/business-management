@@ -19,39 +19,9 @@ exports.default = Page({
     duration: 500
   },
 
-  changeIndicatorDots() {
-    this.setData({
-      indicatorDots: !this.data.indicatorDots
-    })
-  },
-
-  changeAutoplay() {
-    this.setData({
-      autoplay: !this.data.autoplay
-    })
-  },
-
-  intervalChange(e) {
-    this.setData({
-      interval: e.detail.value
-    })
-  },
-
-  durationChange(e) {
-    this.setData({
-      duration: e.detail.value
-    })
-  },
-
-  onReady: function onReady() {},
-  goProductionDetail: function goProductionDetail() {
+  goDetail() {
     wx.navigateTo({
       url: '/pages/production-information/productionInformation'
     });
-  },
-
-  // 回退处理
-  handleBack: function handleBack() {
-    wx.navigateBack();
   }
 });

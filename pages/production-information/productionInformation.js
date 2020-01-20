@@ -5,11 +5,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Page({
   data: {
-    autoplay: {
-      delay: 1000
-    },
-    height: wx.DEFAULT_CONTENT_HEIGHT,
-    imgHeight: parseInt(wx.WIN_WIDTH / 1125 * 628)
+    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    interval: 2000,
+    duration: 500
   },
 
   onReady: function onReady() {}
