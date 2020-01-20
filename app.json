@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/release/release",
     "pages/search-cooperation/index",
     "pages/corporate-information/corporateInformation",
     "pages/production-information/productionInformation",
     "pages/me/resources",
     "pages/me/my-release",
     "pages/me/join-promote",
-    "pages/release/release",
     "pages/me/me"
   ],
   "window": {
