@@ -53,6 +53,10 @@ page .cooperation-detail .container .page-body .content-container .info-list .in
 }
 page .cooperation-detail .container .page-body .content-container .company-present {
   padding: 5px 0;
+}
+page .cooperation-detail .container .page-body .content-container .company-present .title {
+  display: inline-block;
+  width: 100%;
   text-align: center;
 }
 page .cooperation-detail .container .page-body .content-container .company-present .content {

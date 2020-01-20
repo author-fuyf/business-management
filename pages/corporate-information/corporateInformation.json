@@ -1,9 +1,6 @@
 {
   "usingComponents": {
-    "ui-nav-bar": "../../packages/touchui-wx-components/ui-nav-bar/dist/index",
-    "ui-summary": "../../packages/touchui-wx-components/ui-summary/dist/index",
-    "ui-fixed-view": "../../packages/touchui-wx-components/ui-fixed-view/dist/index"
+    "ui-summary": "../../packages/touchui-wx-components/ui-summary/dist/index"
   },
-  "navigationBarTitleText": "企业信息",
-  "navigationStyle": "custom"
+  "navigationBarTitleText": "企业信息"
 }
