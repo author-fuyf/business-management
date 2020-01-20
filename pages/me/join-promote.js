@@ -14,9 +14,9 @@ exports.default = Page({
     areaList: ['宣州区', '雨花台区', '江东区'],
     areaIndex: null,
     imgList: [
-      'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2991599923,180401523&fm=26&gp=0.jpg',
-      'https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1826096250,1203500797&fm=26&gp=0.jpg',
-      'https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=379692142,1164137077&fm=26&gp=0.jpg'
+      'http://img0.imgtn.bdimg.com/it/u=1198822275,2628265929&fm=26&gp=0.jpg',
+      'http://img4.imgtn.bdimg.com/it/u=2064815665,3535977799&fm=26&gp=0.jpg',
+      'http://img0.imgtn.bdimg.com/it/u=1554229607,109391281&fm=26&gp=0.jpg'
     ]
   },
   bindCountryChange(e) {
