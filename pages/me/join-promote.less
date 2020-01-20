@@ -1,0 +1,126 @@
+page {
+  height: calc(~'100% - 10px');
+  padding-top: 10px;
+  .join-promote {
+    height: 100%;
+    font-size: 14px;
+    background: white !important;
+    .default-placeholder {
+      color: #808080;
+    }
+    .content-container {
+      width: 95%;
+      margin: 0 auto;
+      height: calc(~'100% - 50px');
+      overflow-y: auto;
+
+      .industry-block {
+        padding: 10px 0;
+        display: flex;
+        justify-content: flex-start;
+        .label {
+          width: 25%;
+        }
+        .content {
+          width: 70%;
+          margin-left: 5%;
+        }
+      }
+
+      .region-block {
+        padding: 10px 0;
+        .region-container {
+          .region-item {
+            padding: 5px 0;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              width: 25%;
+            }
+            .right-select {
+              width: 70%;
+              margin-left: 5%;
+            }
+          }
+        }
+      }
+
+      .demand-sescript {
+        padding: 5px 0;
+      }
+
+      .company-color-page {
+        padding: 5px 0;
+        .color-page-upload {
+          .page-container {
+            width: 60%;
+            .page-item:first-child {
+              margin-left: 0;
+            }
+            .page-item {
+              width: 30%;
+              height: 50px;
+              margin-left: 5%;
+              float: left;
+              image {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          .upload-container {
+            width: 35%;
+            margin-left: 5%;
+            text-align: center;
+            font-size: 12px;
+            color: #1899DC;
+            .upload-icon {
+              font-size: 28px;
+            }
+          }
+        }
+        .upload-prompt {
+          font-size: 12px;
+          color: red;
+          margin-top: 5px;
+        }
+      }
+
+      .product-list {
+        padding: 10px 0;
+        .pro-item {
+          width: 85%;
+          margin-left: 15%;
+          padding: 10px 0;
+          font-size: 13px;
+          .icon-arrow-right {
+            color: #7F7F7F;
+          }
+        }
+      }
+
+      .textarea-wrp {
+        border: 1rpx solid #ccc;
+        margin-bottom: 20px;
+        textarea {
+          width: 95%;
+          padding: 25rpx 2.5%;
+          min-height: 80px;
+        }
+      }
+    }
+    
+    .fix-bottom {
+      height: 50px;
+      .save-btn {
+        color: white;
+        background: #00B050;
+        display: inline-block;
+        width: 80%;
+        padding: 5px 0;
+        border-radius: 5px;
+        text-align: center;;
+      }
+    }
+  }
+}

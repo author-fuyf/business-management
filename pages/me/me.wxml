@@ -3,7 +3,7 @@
     <image src="{{imgUrl}}" alt=""></image>
   </view>
   <view class="content-container">
-    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center" bindtap="jumpCorrespond" data-path="">
+    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center" bindtap="jumpCorrespond" data-path="join-promote">
       <view class="mix-flex-y-center">
         <text class="icon iconfont icon-Promote item-icon-promote"></text>
         <text class="title">加入推广</text>
