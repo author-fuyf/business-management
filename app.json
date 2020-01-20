@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/release/release",
     "pages/search-cooperation/index",
     "pages/corporate-information/corporateInformation",
     "pages/production-information/productionInformation",
+    "pages/release/release",
+    "pages/me/me",
     "pages/me/resources",
     "pages/me/my-release",
-    "pages/me/join-promote",
-    "pages/me/me"
+    "pages/me/join-promote"
   ],
   "window": {
     "navigationBarBackgroundColor": "#00B050",
