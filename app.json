@@ -7,7 +7,8 @@
     "pages/me/me",
     "pages/me/resources",
     "pages/me/my-release",
-    "pages/me/join-promote"
+    "pages/me/join-promote",
+    "pages/me/favorite"
   ],
   "window": {
     "navigationBarBackgroundColor": "#00B050",

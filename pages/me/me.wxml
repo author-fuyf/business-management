@@ -3,28 +3,28 @@
     <image src="{{imgUrl}}" alt=""></image>
   </view>
   <view class="content-container">
-    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center">
+    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center" bindtap="jumpCorrespond" data-path="">
       <view class="mix-flex-y-center">
         <text class="icon iconfont icon-Promote item-icon-promote"></text>
         <text class="title">加入推广</text>
       </view>
       <text class="icon iconfont icon-arrow-right"></text>
     </view>
-    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center">
+    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center" bindtap="jumpCorrespond" data-path="resources">
       <view class="mix-flex-y-center">
         <text class="icon iconfont icon-resources item-icon"></text>
         <text class="title">项目资源</text>
       </view>
       <text class="icon iconfont icon-arrow-right"></text>
     </view>
-    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center">
+    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center" bindtap="jumpCorrespond" data-path="my-release">
       <view class="mix-flex-y-center">
         <text class="icon iconfont icon-my-release item-icon"></text>
         <text class="title">我的发布</text>
       </view>
       <text class="icon iconfont icon-arrow-right"></text>
     </view>
-    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center">
+    <view class="list-item flex-space-between mix-1px-bottom-D9D9D9 mix-flex-y-center" bindtap="jumpCorrespond" data-path="favorite">
       <view class="mix-flex-y-center">
         <text class="icon iconfont icon-favorites item-icon"></text>
         <text class="title">收藏夹</text>

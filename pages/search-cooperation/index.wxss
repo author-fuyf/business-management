@@ -56,6 +56,7 @@ page .search-cooperation-index .content-container .cooperation-list .list-item .
 }
 page .search-cooperation-index .content-container .cooperation-list .list-item .right-info {
   width: 80%;
+  padding-top: 10px;
 }
 page .search-cooperation-index .content-container .cooperation-list .list-item .right-info .industry-product {
   margin-top: 5px;
