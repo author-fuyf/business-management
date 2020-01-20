@@ -4,13 +4,43 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Page({
+  onShareAppMessage() {
+    return {
+      title: 'swiper',
+      path: 'page/component/pages/swiper/swiper'
+    }
+  },
   data: {
-    autoplay: {
-      delay: 1000
-    },
-    height: wx.DEFAULT_CONTENT_HEIGHT,
-    imgHeight: parseInt(wx.WIN_WIDTH / 1125 * 628),
-    iscollect: false
+    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    interval: 2000,
+    duration: 500
+  },
+
+  changeIndicatorDots() {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
+  },
+
+  changeAutoplay() {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
+  },
+
+  intervalChange(e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+
+  durationChange(e) {
+    this.setData({
+      duration: e.detail.value
+    })
   },
 
   onReady: function onReady() {},

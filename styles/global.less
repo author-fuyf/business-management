@@ -80,6 +80,26 @@
   }
 }
 
+.mix-1px-dashed-bottom-D9D9D9 {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% * 2;
+    height: 100% * 2;
+    border: 0 #D9D9D9 dashed;
+    box-sizing: border-box;
+    transform-origin: 0 0;
+    transform: scale(1 / 2);
+    pointer-events: none;
+    z-index: 0;
+    border-bottom-width: 1px;
+  }
+}
+
 // .mix-1px (@top, @right, @bottom, @left, @color) {
 //   position: relative;
 
