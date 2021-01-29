@@ -1,0 +1,81 @@
+<view class="join-promote">
+  <view class="content-container">
+    <view class="industry-block mix-1px-dashed-bottom-D9D9D9">
+      <span class="label">企业名称：</span>
+      <view class="content">
+        <input type="text" placeholder="请输入企业名称" />
+      </view>
+    </view>
+    <view class="industry-block mix-1px-dashed-bottom-D9D9D9">
+      <span class="label">所属行业：</span>
+      <view class="content">
+        <picker bindchange="bindCountryChange" value="{{industryIndex}}" range="{{industryList}}">
+          <view class="weui-select_in-select-after" wx:if="{{industryIndex != null}}">{{industryList[industryIndex]}}</view>
+          <view class="default-placeholder" wx:else>请选择所属行业</view>
+        </picker>
+      </view>
+    </view>
+    <view class="industry-block mix-1px-dashed-bottom-D9D9D9">
+      <span class="label">地址：</span>
+      <view class="content">
+        <input type="text" placeholder="请输入地址" />
+      </view>
+    </view>
+    <view class="region-block name-phone-block mix-1px-dashed-bottom-D9D9D9">
+      <view class="region-container">
+        <view class="region-item">
+          <view class="label">联系人：</view>
+          <view class="right-select">
+            <input type="text" placeholder="请输入联系人" />
+          </view>
+        </view>
+        <view class="region-item">
+          <view class="label">电话：</view>
+          <view class="right-select">
+            <input type="text" placeholder="请输入电话" />
+          </view>
+        </view>
+        <view class="region-item">
+          <view class="label">邮箱：</view>
+          <view class="right-select">
+            <input type="text" placeholder="请输入邮箱" />
+          </view>
+        </view>
+      </view >
+    </view>
+    <view class="demand-sescript">公司彩页</view>
+    <view class="company-color-page mix-1px-dashed-bottom-D9D9D9">
+      <view class="color-page-upload flex-space-between">
+        <view class="page-container">
+          <view class="page-item" wx:for="{{imgList}}" wx:key="index">
+            <image src="{{item}}"></image>
+          </view>
+          <view class="mix-clearfix"></view>
+          <view class="upload-prompt">最多上传3张彩页，建议6:9图片</view>
+        </view>
+        <view class="upload-container">
+          <text class="icon iconfont icon-upload upload-icon"></text>
+          <view>选择上传</view>
+        </view>
+      </view>
+    </view>
+    <view class="product-list mix-1px-dashed-bottom-D9D9D9">
+      <span>产品列表：</span>
+      <view class="pro-item flex-space-between mix-1px-bottom-D9D9D9" bindtap="goDetail">
+        <span>进销存管理系统</span>
+        <text class="icon iconfont icon-arrow-right"></text>
+      </view>
+      <view class="pro-item flex-space-between mix-1px-bottom-D9D9D9" bindtap="goDetail">
+        <span>GRM客户关系管理系统</span>
+        <text class="icon iconfont icon-arrow-right"></text>
+      </view>
+    </view>
+    <view class="demand-sescript">公司介绍</view>
+    <view class="textarea-wrp">
+      <textarea bindblur="bindTextAreaBlur" auto-height placeholder="请输入公司介绍" />
+    </view>
+  </view>
+  <view class="fix-bottom mix-flex-center">
+    <view class="save-btn">保存</view>
+  </view>
+</view>

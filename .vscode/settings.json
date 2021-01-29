@@ -1,7 +1,8 @@
 {
-  "touchui.deving": true,
-  "touchui.enable": true,
   "files.associations": {
-    "*.ui": "vue"
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.wxml": "html"
   }
 }

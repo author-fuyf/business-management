@@ -1,0 +1,64 @@
+page {
+  height: calc(~'100% - 10px');
+  padding-top: 10px;
+  .info-release {
+    height: 100%;
+    font-size: 14px;
+    background: white !important;
+    .default-placeholder {
+      color: #808080;
+    }
+    .content-container {
+      width: 95%;
+      margin: 0 auto;
+      height: calc(~'100% - 20px');
+      overflow-y: auto;
+
+      .industry-block {
+        padding: 10px 0;
+        display: flex;
+        justify-content: flex-start;
+        .label {
+          width: 25%;
+        }
+        .content {
+          width: 70%;
+          margin-left: 5%;
+        }
+      }
+
+      .region-block {
+        padding: 10px 0;
+        .region-container {
+          width: 90%;
+          margin-left: 10%;
+          .region-item {
+            padding: 5px 0;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              width: 20%;
+            }
+            .right-select {
+              width: 75%;
+              margin-left: 3%;
+            }
+          }
+        }
+      }
+
+      .demand-sescript {
+        padding: 5px 0;
+      }
+
+      .textarea-wrp {
+        border: 1rpx solid #ccc;
+        textarea {
+          width: 95%;
+          padding: 25rpx 2.5%;
+          min-height: 80px;
+        }
+      }
+    }
+  }
+}

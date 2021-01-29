@@ -1,0 +1,80 @@
+page {
+  height: calc(100% - 10px);
+  padding-top: 10px;
+}
+page .cooperation-detail {
+  height: 100%;
+  font-size: 14px;
+  background: white !important;
+}
+page .cooperation-detail .container {
+  height: 100%;
+}
+page .cooperation-detail .container .page-body {
+  height: 100%;
+}
+page .cooperation-detail .container .page-body .swiper {
+  width: 95%;
+  margin: 0 auto;
+}
+page .cooperation-detail .container .page-body .swiper swiper {
+  height: 180px;
+}
+page .cooperation-detail .container .page-body .swiper swiper .swiper-item {
+  height: 100%;
+}
+page .cooperation-detail .container .page-body .swiper swiper .demo-text-1 {
+  background-color: #1AAD19;
+}
+page .cooperation-detail .container .page-body .swiper swiper .demo-text-2 {
+  background-color: #2782D7;
+}
+page .cooperation-detail .container .page-body .swiper swiper .demo-text-3 {
+  background-color: #F1F1F1;
+}
+page .cooperation-detail .container .page-body .content-container {
+  width: 95%;
+  margin: 0 auto;
+  height: calc(100% - 200px);
+  overflow-y: auto;
+}
+page .cooperation-detail .container .page-body .content-container .info-list .info-item {
+  padding: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+page .cooperation-detail .container .page-body .content-container .info-list .info-item .label {
+  width: 25%;
+}
+page .cooperation-detail .container .page-body .content-container .info-list .info-item .right-content {
+  width: 70%;
+  margin-left: 5%;
+  color: #7F7F7F;
+}
+page .cooperation-detail .container .page-body .content-container .company-present {
+  padding: 5px 0;
+}
+page .cooperation-detail .container .page-body .content-container .company-present .title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+page .cooperation-detail .container .page-body .content-container .company-present .content {
+  font-size: 12px;
+  color: #7F7F7F;
+}
+page .cooperation-detail .container .page-body .content-container .product-list {
+  padding: 5px 0 20px 0;
+}
+page .cooperation-detail .container .page-body .content-container .product-list .pro-item {
+  width: 85%;
+  margin-left: 15%;
+  padding: 10px 0;
+}
+page .cooperation-detail .container .page-body .content-container .product-list .pro-item .icon-arrow-right {
+  color: #7F7F7F;
+}
+page .cooperation-detail .container .page-body .fix-bottom {
+  font-size: 12px;
+  color: #7F7F7F;
+}

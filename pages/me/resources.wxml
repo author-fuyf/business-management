@@ -1,0 +1,18 @@
+<view class="resources">
+  <view class="content-container">
+    <view class="cooperation-list">
+      <view class="list-item flex-space-between mix-1px-bottom-C6D9F1" wx:for="{{3}}" wx:key="index" bindtap="goDetail">
+        <view class="left-icon">
+          <text class="icon iconfont icon-search-cooperation"></text>
+        </view>
+        <view class="right-info">
+          <view class="title overflow-ellipsis">开发一个微信小程序</view>
+          <view class="industry-product flex-space-between">
+            <text class="industry">上海市金山区</text>
+            <text class="product">已发布49小时</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

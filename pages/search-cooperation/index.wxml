@@ -1,0 +1,24 @@
+<view class="search-cooperation-index">
+  <view class="search-container flex-space-between">
+    <view class="input-box">
+    <input class="search-input" type="text" ui:model="{{ searchText }}" bindinput="handleInput" placeholder="请输入查询信息"></input>
+    </view>
+    <view class="search-btn">查询</view>
+  </view>
+  <view class="content-container">
+    <view class="cooperation-list">
+      <view class="list-item flex-space-between mix-1px-bottom-C6D9F1" wx:for="{{20}}" wx:key="index" bindtap="goDetail">
+        <view class="left-icon">
+          <text class="icon iconfont icon-search-cooperation"></text>
+        </view>
+        <view class="right-info">
+          <view class="title overflow-ellipsis">上海溪枫信息科技有限公司</view>
+          <view class="industry-product flex-space-between">
+            <text class="industry">服务行业</text>
+            <text class="product">相关产品2个</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
