@@ -1,0 +1,40 @@
+<view class="production-information">
+  <view class="container">
+    <view class="page-body">
+      <view class="page-section page-section-spacing swiper">
+        <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+              <view class="swiper-item {{item}} mix-flex-center">{{item}}</view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <view class="content-container">
+        <view class="info-list">
+          <view class="info-item">
+            <span class="label">产品名称：</span>
+            <span class="right-content">进销存管理系统</span>
+          </view>
+          <view class="info-item">
+            <span class="label">联系人：</span>
+            <span class="right-content">李国涛</span>
+          </view>
+          <view class="info-item">
+            <span class="label">联系电话：</span>
+            <span class="right-content">18301735240</span>
+          </view>
+          <view class="info-item">
+            <span class="label">产品介绍：</span>
+          </view>
+          <view class="company-present">
+            <span>
+              万达集团创立于1988年，经过30年发展，已成为以现代服务业为主的大型跨国企业集团。万达是世界领先的不动产企业、世界领先的影视企业、世界领先的体育企业、世界领先的儿童产业企业。万达广场、万达影城、万达酒店、万达文化旅游城、万达宝贝王成为中国知名品牌。2018年企业资产6257亿元，收入2143亿元。万达集团创立于1988年，经过30年发展，已成为以现代服务业为主的大型跨国企业集团。万达是世界领先的不动产企业、世界领先的影视企业、世界领先的体育企业、世界领先的儿童产业企业。万达广场、万达影城、万达酒店、万达文化旅游城、万达宝贝王成为中国知名品牌。2018年企业资产6257亿元，收入2143亿元。万达集团创立于1988年，经过30年发展，已成为以现代服务业为主的大型跨国企业集团。万达是世界领先的不动产企业、世界领先的影视企业、世界领先的体育企业、世界领先的儿童产业企业。万达广场、万达影城、万达酒店、万达文化旅游城、万达宝贝王成为中国知名品牌。2018年企业资产6257亿元，收入2143亿元。
+            </span>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

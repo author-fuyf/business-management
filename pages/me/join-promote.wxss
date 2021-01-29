@@ -1,0 +1,115 @@
+page {
+  height: calc(100% - 10px);
+  padding-top: 10px;
+}
+page .join-promote {
+  height: 100%;
+  font-size: 14px;
+  background: white !important;
+}
+page .join-promote .default-placeholder {
+  color: #808080;
+}
+page .join-promote .content-container {
+  width: 95%;
+  margin: 0 auto;
+  height: calc(100% - 50px);
+  overflow-y: auto;
+}
+page .join-promote .content-container .industry-block {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+page .join-promote .content-container .industry-block .label {
+  width: 25%;
+}
+page .join-promote .content-container .industry-block .content {
+  width: 70%;
+  margin-left: 5%;
+}
+page .join-promote .content-container .region-block {
+  padding: 10px 0;
+}
+page .join-promote .content-container .region-block .region-container .region-item {
+  padding: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+page .join-promote .content-container .region-block .region-container .region-item .label {
+  width: 25%;
+}
+page .join-promote .content-container .region-block .region-container .region-item .right-select {
+  width: 70%;
+  margin-left: 5%;
+}
+page .join-promote .content-container .demand-sescript {
+  padding: 5px 0;
+}
+page .join-promote .content-container .company-color-page {
+  padding: 5px 0;
+}
+page .join-promote .content-container .company-color-page .color-page-upload .page-container {
+  width: 60%;
+}
+page .join-promote .content-container .company-color-page .color-page-upload .page-container .page-item:first-child {
+  margin-left: 0;
+}
+page .join-promote .content-container .company-color-page .color-page-upload .page-container .page-item {
+  width: 30%;
+  height: 50px;
+  margin-left: 5%;
+  float: left;
+}
+page .join-promote .content-container .company-color-page .color-page-upload .page-container .page-item image {
+  width: 100%;
+  height: 100%;
+}
+page .join-promote .content-container .company-color-page .color-page-upload .upload-container {
+  width: 35%;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 12px;
+  color: #1899DC;
+}
+page .join-promote .content-container .company-color-page .color-page-upload .upload-container .upload-icon {
+  font-size: 28px;
+}
+page .join-promote .content-container .company-color-page .upload-prompt {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+page .join-promote .content-container .product-list {
+  padding: 10px 0;
+}
+page .join-promote .content-container .product-list .pro-item {
+  width: 85%;
+  margin-left: 15%;
+  padding: 10px 0;
+  font-size: 13px;
+}
+page .join-promote .content-container .product-list .pro-item .icon-arrow-right {
+  color: #7F7F7F;
+}
+page .join-promote .content-container .textarea-wrp {
+  border: 1rpx solid #ccc;
+  margin-bottom: 20px;
+}
+page .join-promote .content-container .textarea-wrp textarea {
+  width: 95%;
+  padding: 25rpx 2.5%;
+  min-height: 80px;
+}
+page .join-promote .fix-bottom {
+  height: 50px;
+}
+page .join-promote .fix-bottom .save-btn {
+  color: white;
+  background: #00B050;
+  display: inline-block;
+  width: 80%;
+  padding: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+}

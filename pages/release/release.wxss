@@ -1,0 +1,60 @@
+page {
+  height: calc(100% - 10px);
+  padding-top: 10px;
+}
+page .info-release {
+  height: 100%;
+  font-size: 14px;
+  background: white !important;
+}
+page .info-release .default-placeholder {
+  color: #808080;
+}
+page .info-release .content-container {
+  width: 95%;
+  margin: 0 auto;
+  height: calc(100% - 20px);
+  overflow-y: auto;
+}
+page .info-release .content-container .industry-block {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+page .info-release .content-container .industry-block .label {
+  width: 25%;
+}
+page .info-release .content-container .industry-block .content {
+  width: 70%;
+  margin-left: 5%;
+}
+page .info-release .content-container .region-block {
+  padding: 10px 0;
+}
+page .info-release .content-container .region-block .region-container {
+  width: 90%;
+  margin-left: 10%;
+}
+page .info-release .content-container .region-block .region-container .region-item {
+  padding: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+page .info-release .content-container .region-block .region-container .region-item .label {
+  width: 20%;
+}
+page .info-release .content-container .region-block .region-container .region-item .right-select {
+  width: 75%;
+  margin-left: 3%;
+}
+page .info-release .content-container .demand-sescript {
+  padding: 5px 0;
+}
+page .info-release .content-container .textarea-wrp {
+  border: 1rpx solid #ccc;
+}
+page .info-release .content-container .textarea-wrp textarea {
+  width: 95%;
+  padding: 25rpx 2.5%;
+  min-height: 80px;
+}

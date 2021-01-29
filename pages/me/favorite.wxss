@@ -1,0 +1,65 @@
+page {
+  height: calc(100% - 10px);
+  padding-top: 10px;
+}
+page .favorite {
+  height: 100%;
+  font-size: 14px;
+  background: white !important;
+}
+page .favorite .search-container {
+  width: 95%;
+  margin: 0 auto;
+}
+page .favorite .search-container .input-box {
+  width: 85%;
+  border: 1px solid #D9D9D9;
+  border-radius: 0;
+  position: relative;
+}
+page .favorite .search-container .input-box input {
+  font-size: 14px;
+}
+page .favorite .search-container .input-box input::placeholder {
+  color: #EBEBEB;
+}
+page .favorite .search-container .input-box .search-input {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 90%;
+}
+page .favorite .search-container .search-btn {
+  width: 15%;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background: #00b050;
+  color: #B0D1BF;
+}
+page .favorite .content-container {
+  width: 95%;
+  margin: 0 auto;
+  height: calc(100% - 48px);
+  overflow-y: auto;
+}
+page .favorite .content-container .cooperation-list .list-item {
+  padding: 10px 0;
+}
+page .favorite .content-container .cooperation-list .list-item .left-icon {
+  width: 15%;
+}
+page .favorite .content-container .cooperation-list .list-item .left-icon .icon {
+  font-size: 40px;
+  color: #1296DB;
+}
+page .favorite .content-container .cooperation-list .list-item .right-info {
+  width: 80%;
+  padding-top: 10px;
+}
+page .favorite .content-container .cooperation-list .list-item .right-info .industry-product {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #7F7F7F;
+}

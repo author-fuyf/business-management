@@ -1,0 +1,105 @@
+/* flex 两侧分布 */
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+/* 超出文本省略号 */
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* padding-top: 1PX; */
+}
+/*
+ * 清除浮动
+ */
+.mix-clearfix:before,
+.mix-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 垂直居中 */
+.mix-flex-y-center {
+  display: flex;
+  align-items: center;
+}
+/* 水平居中 */
+.mix-flex-x-center {
+  display: flex;
+  justify-content: center;
+}
+/* 水平垂直居中 */
+.mix-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 超出部分出省略号 */
+.mix-text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* 多行文本超出部分省略号 */
+.ellipsis-line-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  box-orient: vertical;
+}
+.mix-1px-bottom-D9D9D9 {
+  position: relative;
+}
+.mix-1px-bottom-D9D9D9:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  border: 0 #D9D9D9 solid;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  transform: scale(0.5);
+  pointer-events: none;
+  z-index: 0;
+  border-bottom-width: 1px;
+}
+.mix-1px-bottom-C6D9F1 {
+  position: relative;
+}
+.mix-1px-bottom-C6D9F1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  border: 0 #C6D9F1 solid;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  transform: scale(0.5);
+  pointer-events: none;
+  z-index: 0;
+  border-bottom-width: 1px;
+}
+.mix-1px-dashed-bottom-D9D9D9 {
+  position: relative;
+}
+.mix-1px-dashed-bottom-D9D9D9:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  border: 0 #D9D9D9 dashed;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  transform: scale(0.5);
+  pointer-events: none;
+  z-index: 0;
+  border-bottom-width: 1px;
+}
